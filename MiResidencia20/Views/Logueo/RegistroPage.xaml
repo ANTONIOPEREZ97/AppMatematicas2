@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiResidencia20.Views.RegistroPage" Title="Registrar Usuario">
+   
+    <ScrollView>
+        <!--Logos instutucionales-->
+        <StackLayout Margin="10,30">
+         
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                       <Image Source="logo_TecNM.png" HeightRequest="100" WidthRequest="100"  Grid.Column="0" Grid.Row="0"/>
+                       <Image Source="logo_ITTG.png" HeightRequest="100" WidthRequest="100"  Grid.Column="1" Grid.Row="0"/>
+                </Grid>
+            
+             
+
+            <!--Fomulario-->
+            <StackLayout Padding="10,30">
+             <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                         <ColumnDefinition Width="15*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                        <Image Source="icono_Usuario.png" Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand"></Image>
+
+                        <StackLayout Grid.Column="1" Grid.Row="0">
+                            <Label Text="Usuario"/>
+                            <Frame><Entry Placeholder="Nombre de Usuario" Keyboard="Text" x:Name="UsuarioEntry"/></Frame>
+                        </StackLayout>
+
+                        <Image Source="icono_Carrera.png" Grid.Column="0" Grid.Row="1"></Image>
+
+                        <StackLayout  Grid.Column="1" Grid.Row="1">
+                            <Label Text="Carrera"/>
+                            <Frame><Entry  Placeholder="Nombre de la Carrera" Keyboard="Text" x:Name="carreraEntry" /></Frame>
+                        </StackLayout>
+
+                        <Image Source="icono_Grupo.png" Grid.Column="0" Grid.Row="2"></Image>
+
+                        <StackLayout Grid.Column="1" Grid.Row="2">
+                            <Label Text="Grupo"/>
+                            <Frame><Entry Placeholder="Grupo" Keyboard="Text" x:Name="grupoEntry"/></Frame>
+                        </StackLayout>
+
+                        <Image Source="icono_Periodo.png" Grid.Column="0" Grid.Row="3"></Image>
+
+                        <StackLayout  Grid.Column="1" Grid.Row="3">
+                            <Label Text="Periodo"/>
+                            <Frame><Entry Placeholder="ENE-JUN/2020" Keyboard="Text" x:Name="periodoEntry"/></Frame>
+                        </StackLayout>
+
+                        <StackLayout  Grid.ColumnSpan="2" Grid.Row="4" Margin="80,50">
+                        <Button Text="Registrarse" Clicked="Btn_Registrar" WidthRequest="20"/>
+                        </StackLayout>
+
+       
+            
+                </Grid>
+
+            </StackLayout>
+
+
+
+        
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="MiResidencia20.App">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--Todos los estilo de la AppMatemaâticas 2020 ENE-JUNIO-->
+
+            <!-- Titulos Principales-->
+            <Style TargetType="Label" x:Key="Lbl_TituloPrincipal">
+              <Setter Property="FontSize" Value="18">  </Setter>
+              <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+              <Setter Property="VerticalTextAlignment" Value="center"></Setter>
+              <Setter Property="FontAttributes" Value="Bold"></Setter>
+            </Style>
+
+            <!--1.Botones  Globales-->
+            <Style TargetType="Button">
+              <Setter Property="BackgroundColor" Value="#1E4D7E" ></Setter>
+              <Setter Property="TextColor"       Value="Yellow"></Setter>
+              <Setter Property="CornerRadius"    Value="0"></Setter>
+              <Setter Property="HeightRequest"   Value="40"></Setter>
+              <Setter Property="FontAttributes"  Value="Bold"></Setter>
+            </Style>
+            
+            <!--2.Label-->
+            <Style TargetType="Label">
+              <Setter Property="FontAttributes" Value="Bold"></Setter>
+              <Setter Property="TextColor" Value="#1E4D7E"></Setter>
+            </Style>
+
+            <!--3.Frames-->
+            <Style TargetType="Frame">
+              <Setter Property="HasShadow"  Value="True"></Setter>
+              <Setter Property="Padding"    Value="0,1,0,0"></Setter>
+            </Style>
+
+              <!-- 4.Entrys -->
+            <Style TargetType="Entry">
+              <Setter Property="BackgroundColor" Value="#E8F0FE"></Setter>
+              <Setter Property="WidthRequest"    Value="275"></Setter>
+              <Setter Property="HeightRequest"   Value="50"></Setter>
+            </Style>
+
+
+             <!-- Vista de Porcentaje de Evaluación-->
+             <!-- 5.Labels Cabeceras VerPorcentajes-->
+            <Style TargetType="Label" x:Key="Lbl_Cabecera">
+              <Setter Property="VerticalTextAlignment"  Value="Center"></Setter>
+              <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+              <Setter Property="TextColor" Value="#FFFF66"></Setter>
+              <Setter Property="BackgroundColor" Value="#1E4D7E"></Setter>
+              <Setter Property="FontAttributes" Value="Bold"></Setter>
+              <Setter Property="FontSize" Value="10"></Setter> 
+            </Style>
+
+             <!-- 5.1 Labels  Unidades VerPorcentajes-->
+            <Style TargetType="Label" x:Key="Lbl_Unidad">
+              <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
+              <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
+              <Setter Property="TextColor" Value="#ff9800"></Setter>
+              <Setter Property="BackgroundColor" Value="#EEEEEE"></Setter>
+              <Setter Property="FontAttributes" Value="Bold"></Setter> 
+            </Style>
+
+
+            <!--6.Estilos de Teorías-->
+            <!--6.1 Subtitulos-->
+            <Style TargetType="Label" x:Key="Lbl_Subtitulos">
+              <Setter Property="FontSize" Value="12">  </Setter>
+              <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+              <Setter Property="VerticalTextAlignment" Value="Start"></Setter>
+              <Setter Property="FontAttributes" Value="Bold"></Setter>
+               <Setter Property="TextColor" Value="#ff9800"></Setter>
+            </Style>
+
+            <!--6.2 Contenido-->
+            <Style TargetType="Label" x:Key="Lbl_tituloSubtema">
+              <Setter Property="FontSize" Value="10">  </Setter>
+              <Setter Property="HorizontalTextAlignment" Value="Start"></Setter>
+              <Setter Property="VerticalTextAlignment" Value="Start"></Setter>
+              <Setter Property="FontAttributes" Value="Bold"></Setter>
+              <Setter Property="TextColor" Value="Black"></Setter>
+            </Style>
+
+            <!--7  Estilos de Ejercicios-->
+            <!--7.1  Pregunta-->
+            <Style TargetType="Label" x:Key="Lbl_pregunta">
+              <Setter Property="FontSize" Value="20"/>
+              <Setter Property="FontAttributes" Value="None"/>
+              <Setter Property="TextColor" Value="Black"/>
+              <Setter Property="LineBreakMode" Value="WordWrap"/>
+              <Setter Property="Padding" Value="15"/>
+            </Style>
+
+            <!-- 7.2  Respuestas Opciones-->
+            <Style TargetType="Label" x:Key="Lbl_respuestaOpciones">
+              <Setter Property="HorizontalOptions" Value="Start"/>
+              <Setter Property="VerticalOptions" Value="CenterAndExpand"/>
+              <Setter Property="Margin" Value="20,0"/>
+              <Setter Property="FontSize" Value="15"/>
+              <Setter Property="FontAttributes" Value="Bold"/> 
+              <Setter Property="BackgroundColor" Value="#F5F5F5"/>
+            </Style>
+
+
+            <!--8  Menús Cards Teorías|Evaluación... -->
+            <!--8.1  Cards-->
+            <Style TargetType="Label" x:Key="Lbl_cards">
+                <Setter Property="TextColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="11"/>
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            </Style>
+
+            <!--8.2  CardsButtons-->
+            <Style TargetType="Button" x:Key="Btn_cards">
+                <Setter Property="HeightRequest" Value="30"/>
+                <Setter Property="FontSize" Value="9"/>
+                <Setter Property="Margin" Value="10,0"/>
+            </Style>
+
+
+
+            <!--9.Contenido de Juegos-->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,590 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.4.118" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\Logueo\" />
+    <Folder Include="Views\Teorias\" />
+    <Folder Include="Views\Ejercicios\" />
+    <Folder Include="Views\Evaluaciones\" />
+    <Folder Include="Views\Menu\" />
+    <Folder Include="Imagenes\" />
+    <Folder Include="Imagenes\Teoria\" />
+    <Folder Include="Data\" />
+    <Folder Include="Views\About\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Evaluaciones\EvalUnidad1Page.xaml.cs" />
+    <Compile Remove="Data\InfoMasterDetailPage.xaml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Logueo\BienvenidaPage.xaml.cs">
+      <DependentUpon>BienvenidaPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Logueo\RegistroPage.xaml.cs">
+      <DependentUpon>RegistroPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Imagenes\Teorias\TeoriaUnidad1\teoriau1_img1.png" />
+    <None Remove="Imagenes\Teorias\TeoriaUnidad1\teoriau1_img2.png" />
+    <None Remove="Imagenes\Teorias\TeoriaUnidad1\teoriau1_img3.png" />
+    <None Remove="Imagenes\Teorias\TeoriaUnidad1\teoriau1_img5.png" />
+    <None Remove="Imagenes\Teorias\TeoriaUnidad1\teoriau1_img6.png" />
+    <None Remove="Imagenes\Teorias\Unidad1 %28copia%29\teoriau1_img1.png" />
+    <None Remove="Imagenes\Teorias\Unidad1 %28copia%29\teoriau1_img2.png" />
+    <None Remove="Imagenes\Teorias\Unidad1 %28copia%29\teoriau1_img3.png" />
+    <None Remove="Imagenes\Teorias\Unidad1 %28copia%29\teoriau1_img4.png" />
+    <None Remove="Imagenes\Teorias\Unidad1 %28copia%29\teoriau1_img5.png" />
+    <None Remove="Imagenes\Teorias\Unidad1 %28copia%29\teoriau1_img6.png" />
+    <None Remove="Imagenes\Teorias\Unidad1 %28copia%29\teoriau1_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau1_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau1_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau1_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau1_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau1_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau1_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau3_img1.png" />
+    <None Remove="Imagenes\Teorias\teoriau3_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau3_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau3_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau3_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau3_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau3_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img1.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img10.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img11.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img12.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img8.png" />
+    <None Remove="Imagenes\Teorias\teoriau4_img9.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img1.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau5_img8.png" />
+    <None Remove="Imagenes\Teorias\teoriau6_img1.png" />
+    <None Remove="Imagenes\Teorias\teoriau6_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau6_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau6_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau6_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau6_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img1.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img10.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img11.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img12.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img8.png" />
+    <None Remove="Imagenes\Teorias\teoriau7_img9.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img1.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img10.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img11.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img12.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img13.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img14.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img15.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img8.png" />
+    <None Remove="Imagenes\Teorias\teoriau8_img9.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img1.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img2.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img3.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img4.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img5.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img6.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img7.png" />
+    <None Remove="Imagenes\Teorias\teoriau9_img8.png" />
+    <None Remove="Imagenes\tu2img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img2.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img7.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img10.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img11.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img12.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img7.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img8.png" />
+    <None Remove="Imagenes\Teoria\teoriau4_img9.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img2.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img7.png" />
+    <None Remove="Imagenes\Teoria\teoriau5_img8.png" />
+    <None Remove="Imagenes\Teoria\teoriau6_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau6_img2.png" />
+    <None Remove="Imagenes\Teoria\teoriau6_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau6_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau6_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau6_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img10.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img11.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img12.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img2.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img7.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img8.png" />
+    <None Remove="Imagenes\Teoria\teoriau7_img9.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img10.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img11.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img12.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img13.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img14.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img15.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img2.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img7.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img8.png" />
+    <None Remove="Imagenes\Teoria\teoriau8_img9.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img2.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img7.png" />
+    <None Remove="Imagenes\Teoria\teoriau9_img8.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img10.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img11.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img12.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img13.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img14.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img2.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img3.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img4.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img5.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img6.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img7.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img8.png" />
+    <None Remove="Imagenes\Teoria\teoriau2_img9.png" />
+    <None Remove="Imagenes\Teoria\teoriau1_img1.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img8.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img9.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img10.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img11.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img12.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img13.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img14.png" />
+    <None Remove="Imagenes\Teoria\teoriau3_img15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau1_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau1_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau1_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau1_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau1_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau1_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img10.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img11.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img12.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img8.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau4_img9.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau5_img8.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img10.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img11.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img12.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img8.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img9.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img10.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img11.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img12.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img13.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img14.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img15.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img8.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau8_img9.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau9_img8.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img1.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img11.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img12.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img13.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img14.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img3.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img4.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img5.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img6.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img7.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img8.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img9.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau2_img10.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau1_img1.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img8.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img9.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img10.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img11.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img12.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img13.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img14.png" />
+    <EmbeddedResource Include="Imagenes\Teoria\teoriau3_img15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Imagenes\Teoria\teoriau4_img2.png">
+      <SubType></SubType>
+      <Generator></Generator>
+    </AndroidResource>
+  </ItemGroup>
+</Project>

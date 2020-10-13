@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:MiResidencia20.Views.About"
+            xmlns:local1="clr-namespace:MiResidencia20.Views.Menu"
+            x:Class="MiResidencia20.Views.Logueo.MenuTabbedPage"
+            Title="AppMatemáticas">
+
+          <!--Mis paginas de navegación para mi Menu-->
+      <local1:HomePage Title="Principal" IconImageSource="icono_Home.png"/>
+      <local1:TeoriasPage Title="Teoría" IconImageSource="icono_Teoria.png"/>
+      <local1:EvaluacionesPage Title="Evaluación" IconImageSource="icono_Evaluacion.png"/>
+      <local1:PorcentajeEvaluacionPage Title="%Evaluación" IconImageSource="icono_Revaluacion.png"/>
+      <local1:JuegosPage Title="Juego"  IconImageSource="icono_Juego1.png"/>
+</TabbedPage>

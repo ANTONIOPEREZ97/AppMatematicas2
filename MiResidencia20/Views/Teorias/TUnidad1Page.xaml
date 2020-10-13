@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiResidencia20.Views.Teorias.TUnidad1Page"
+             xmlns:local="clr-namespace:MiResidencia20"
+             BackgroundColor="#DEDECA"
+             Title="Teoría">
+
+         <Frame BackgroundColor="White" CornerRadius="5" Margin="5">
+             <StackLayout>
+               <Label Text="Unidad I. Números Reales" Style="{StaticResource Lbl_TituloPrincipal}"/>
+                <ScrollView>
+                  <StackLayout>
+                      <Label Text="1.1. Clasificación de los números reales" Style="{StaticResource Lbl_Subtitulos}" Margin="0" Padding="0"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau1_img1.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau1_img2.png}" Aspect="AspectFill"></Image>
+
+                      <Label Text="1.2. Propiedades de los números reales(axiomas)" Style="{StaticResource Lbl_Subtitulos}"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau1_img3.png}" Aspect="AspectFill"></Image>
+
+                      <!--Adición y sustracción-->
+                      <Label Text="Adición y sustracción" Style="{StaticResource Lbl_tituloSubtema}" Margin="0" Padding="0"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau1_img4.png}" Aspect="AspectFill"></Image>
+
+                      <!--Multiplicación y División-->
+                      <Label Text="Multiplicación y División" Style="{StaticResource Lbl_tituloSubtema}" Margin="0" Padding="0"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau1_img5.png}" Aspect="AspectFill"></Image>
+
+                      <!--La recta real-->
+                      <Label Text="La recta real" Style="{StaticResource Lbl_tituloSubtema}" Margin="0" Padding="0"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau1_img6.png}" Aspect="AspectFill"></Image>
+
+                      <!--Conjuntos e intervalos-->
+                      <Label Text="Conjuntos e intervalos" Style="{StaticResource Lbl_tituloSubtema}" Margin="0" Padding="0"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau1_img7.png}" Aspect="AspectFill"></Image>
+
+                    
+                      <Grid Margin="20,20">
+                          <Grid.RowDefinitions>
+                            <RowDefinition/>
+                          </Grid.RowDefinitions>
+
+                          <Grid.ColumnDefinitions>
+                           <ColumnDefinition/>
+                           <ColumnDefinition/>
+                          </Grid.ColumnDefinitions>
+
+                        <Button Text="Video Tutorial" Clicked="Btn_irAVideoTuturial" Grid.Row="0" Grid.Column="0"/> 
+                        <Button Text="Ejercicios" Clicked="Btn_irAEjerciciosU1" Grid.Row="0" Grid.Column="1"/> 
+                      </Grid>
+
+                      <!--WebView: Video tutorial-->
+                          <WebView x:Name="WebView" VerticalOptions="FillAndExpand"
+                                   Source="https://www.youtube.com/watch?v=Of2wQohpbZo">
+                          </WebView>
+                         
+                </StackLayout>
+                </ScrollView>
+           </StackLayout>      
+         </Frame>
+</ContentPage>

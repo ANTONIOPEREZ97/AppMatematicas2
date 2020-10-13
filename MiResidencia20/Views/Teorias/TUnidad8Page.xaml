@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MiResidencia20"
+             x:Class="MiResidencia20.Views.Teorias.TUnidad8Page"
+             Title="Teoría">
+
+
+    <Frame BackgroundColor="White" CornerRadius="5" Margin="5">
+             <StackLayout>
+               <Label Text="Unidad 8.Logaritmos y Exponenciales" Style="{StaticResource Lbl_TituloPrincipal}"/>
+                <ScrollView>
+                  <StackLayout>
+                      <!-- Conceptos de logaritmos y exponenciales-->
+                      <Label Text="8.1. Conceptos de logaritmos y exponenciales" Style="{StaticResource Lbl_Subtitulos}" Margin="0" Padding="0"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img1.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img2.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img3.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img4.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img5.png}" Aspect="AspectFill"></Image>
+                      
+                      <!-- Logaritmos comunes y naturales-->
+                      <Label Text="8.2. Logaritmos comunes y naturales" Style="{StaticResource Lbl_Subtitulos}"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img6.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img7.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img8.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img9.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img10.png}" Aspect="AspectFill"></Image>
+
+                      <!-- Leyes de los logaritmos-->
+                      <Label Text="8.3.Leyes de los logaritmos" Style="{StaticResource Lbl_Subtitulos}"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img11.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img12.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img13.png}" Aspect="AspectFill"></Image>
+
+                      <!-- Ecuaciones exponenciales y logarítmicas -->
+                      <Label Text="8.4.Ecuaciones exponenciales y logarítmicas" Style="{StaticResource Lbl_Subtitulos}"/>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img14.png}" Aspect="AspectFill"></Image>
+                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau8_img15.png}" Aspect="AspectFill"></Image>
+
+                      <Grid Margin="20,20">
+                          <Grid.RowDefinitions>
+                            <RowDefinition/>
+                          </Grid.RowDefinitions>
+
+                          <Grid.ColumnDefinitions>
+                           <ColumnDefinition/>
+                           <ColumnDefinition/>
+                          </Grid.ColumnDefinitions>
+                        
+                        <Button Text="Video Tutorial" Clicked="Btn_irAVideoTuturial"  Grid.Row="0" Grid.Column="0"/> 
+                        <Button Text="Ejercicios" Clicked="Btn_irAEjerciciosU8" Grid.Row="0" Grid.Column="1"/> 
+                      </Grid>
+
+                      <!--WebView: Video tutorial-->
+                        <WebView x:Name="WebView" VerticalOptions="FillAndExpand"
+                                Source="https://www.youtube.com/watch?v=C0BIfEB0eJM">
+                               
+                        </WebView>
+
+                  </StackLayout>
+                </ScrollView>
+           </StackLayout>      
+     </Frame>
+</ContentPage>

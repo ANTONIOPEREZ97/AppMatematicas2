@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiResidencia20.Views.BienvenidaPage" Title="Bienvenido">
+    <ScrollView>
+        <StackLayout >
+           
+
+            <Image Source="logoApp.png" Aspect="AspectFit"></Image>
+
+
+            <Frame BackgroundColor="White" Margin="0,-50,0,0" CornerRadius="12" HasShadow="False">
+                <StackLayout Margin="80,130,80,0">
+                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro"
+                        WidthRequest="45" HeightRequest="40"/>
+                </StackLayout>
+            </Frame>
+                
+            
+            
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
