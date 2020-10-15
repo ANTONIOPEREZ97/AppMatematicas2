@@ -9,34 +9,30 @@ namespace MiResidencia20
 {
     public partial class App : Application
     {
-        //llamo a mi clase DatabaseQuery creandole una variable
-        static DatabaseQuery database;
-
-        public static DatabaseQuery Database
-        {
-            get
-            {
-                if (database == null)
-                {
-                    //TestAlumno es el nombre de mi base de datos
-                    database = new DatabaseQuery(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"TestAlumno.db3"));
-
-                }
-               
-                return database;
-            }
-            
-
-
-        }
-
+        //1.Mando a llamar a mi propiedad del Modelo DatabaseContex 
+        public static DatabaseContext  Context { get; set; }
 
         public App()
         {
             InitializeComponent();
-
+            //2.Creo un meto-do
+            InitializeDatabase();
             MainPage = new  NavigationPage (new BienvenidaPage());
         }
+
+        private void InitializeDatabase()
+        {
+            //Obtener la carpeta de la Aplicación
+            var CarpetaApp = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+            //Necesito la ruta completa de
+            var dbPath = System.IO.Path.Combine(CarpetaApp,"TestEstudiante.db3");
+
+            //3.Inicializo Context enviandole la ruta de la BD al meto-do DatabeContext
+            Context = new DatabaseContext(dbPath);
+          
+        }
+
 
         protected override void OnStart()
         {

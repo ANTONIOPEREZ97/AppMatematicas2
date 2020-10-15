@@ -38,34 +38,43 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
+                        <!--Nombre-->
                         <Image Source="icono_Usuario.png" Grid.Column="0" Grid.Row="0" VerticalOptions="CenterAndExpand"></Image>
-
                         <StackLayout Grid.Column="1" Grid.Row="0">
-                            <Label Text="Usuario"/>
-                            <Frame><Entry Placeholder="Nombre de Usuario" Keyboard="Text" x:Name="UsuarioEntry"/></Frame>
+                            <Label Text="Nombre"/>
+                            <Frame HasShadow="True">
+                                <Entry Placeholder="Nombre de Usuario"  Keyboard="Text"  x:Name="nombreCompletoEntry"/>
+                            </Frame>
                         </StackLayout>
 
+                        <!--Carrera-->
                         <Image Source="icono_Carrera.png" Grid.Column="0" Grid.Row="1"></Image>
-
                         <StackLayout  Grid.Column="1" Grid.Row="1">
                             <Label Text="Carrera"/>
-                            <Frame><Entry  Placeholder="Nombre de la Carrera" Keyboard="Text" x:Name="carreraEntry" /></Frame>
+                            <Frame HasShadow="True">
+                                <Entry  Placeholder="Nombre de la Carrera" Keyboard="Text" x:Name="carreraEntry"/>
+                            </Frame>
                         </StackLayout>
 
+                        <!--Grupo-->
                         <Image Source="icono_Grupo.png" Grid.Column="0" Grid.Row="2"></Image>
-
                         <StackLayout Grid.Column="1" Grid.Row="2">
                             <Label Text="Grupo"/>
-                            <Frame><Entry Placeholder="Grupo" Keyboard="Text" x:Name="grupoEntry"/></Frame>
+                            <Frame HasShadow="True">
+                                <Entry Placeholder="Grupo" Keyboard="Text" x:Name="grupoEntry"/>
+                            </Frame>
                         </StackLayout>
 
+                      <!--Periodo-->
                         <Image Source="icono_Periodo.png" Grid.Column="0" Grid.Row="3"></Image>
-
                         <StackLayout  Grid.Column="1" Grid.Row="3">
                             <Label Text="Periodo"/>
-                            <Frame><Entry Placeholder="ENE-JUN/2020" Keyboard="Text" x:Name="periodoEntry"/></Frame>
+                            <Frame  HasShadow="True">
+                                <Entry Placeholder="ENE-JUN/2020" Keyboard="Text" x:Name="periodoEntry"/>
+                            </Frame>
                         </StackLayout>
 
+                 <!--Boton de registrar-->
                         <StackLayout  Grid.ColumnSpan="2" Grid.Row="4" Margin="80,50">
                         <Button Text="Registrarse" Clicked="Btn_Registrar" WidthRequest="20"/>
                         </StackLayout>
