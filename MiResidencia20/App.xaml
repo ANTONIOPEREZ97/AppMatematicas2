@@ -16,8 +16,9 @@
 
             <!--1.Botones  Globales-->
             <Style TargetType="Button">
-              <Setter Property="BackgroundColor" Value="#1E4D7E" ></Setter>
-              <Setter Property="TextColor"       Value="Yellow"></Setter>
+              <Setter Property="BackgroundColor" Value="#002859" ></Setter>
+              <Setter Property="BorderColor"   Value="#1077D1"></Setter>
+              <Setter Property="TextColor"       Value="White"></Setter>
               <Setter Property="CornerRadius"    Value="0"></Setter>
               <Setter Property="HeightRequest"   Value="40"></Setter>
               <Setter Property="FontAttributes"  Value="Bold"></Setter>

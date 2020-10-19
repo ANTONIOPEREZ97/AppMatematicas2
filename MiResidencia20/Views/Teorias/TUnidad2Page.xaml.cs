@@ -21,7 +21,7 @@ namespace MiResidencia20.Views.Teorias
         void Btn_irAVideoTuturial(System.Object sender, System.EventArgs e)
         {
 
-            var anchura = 500;
+            var anchura = 600;
             WebView.HeightRequest = anchura;
             var meWebUnidad2 = WebView.Source;
         }

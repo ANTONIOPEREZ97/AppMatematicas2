@@ -38,6 +38,12 @@ namespace MiResidencia20.Data
 
         }
 
+        //5. Meto-do Delete de la lista de datos
+        public async  Task<int> DeleteItemsEstudiantesAsync(Estudiante estudiante)
+        {
+
+            return await Connection.DeleteAsync(estudiante);
+        }
 
 
 
@@ -45,66 +51,5 @@ namespace MiResidencia20.Data
 
 
     }
-
-    #region FirstImplements BD
-    //<! Implementacion de 1ERA BASE DE DATOS!>
-    //public class DatabaseQuery
-    //{
-    //    readonly SQLiteAsyncConnection _database;
-
-    //    //Creo mi constructor recibe una ruta de la base de datos
-    //    public DatabaseQuery(string dbPath)
-    //    {
-    //        //El contructor recibe un parametro 
-    //        _database = new SQLiteAsyncConnection(dbPath);
-
-    //        //le paso un objeto/modelo de Estudiante global
-    //        _database.CreateTableAsync<Estudiante>().Wait();
-
-
-    //    }
-
-    //    #region CRUD
-
-
-    //    //Insertar Y Actualizar
-
-    //    public Task<int>SaveEstudianteAsync(Estudiante estudiante)
-    //    {
-    //        if(estudiante.Id != 0)
-    //        {
-    //            return _database.UpdateAsync(estudiante);
-    //        }
-
-    //        else
-    //        {
-    //            return _database.InsertAsync(estudiante);
-    //        }
-
-
-    //    }
-
-
-    //    //METOD0 SELECT() * para listar mis datos de la table insertados
-
-    //    public Task<List<Estudiante>>GetEstudiante()
-    //    {
-    //        return _database.Table<Estudiante>().ToListAsync();
-
-    //    }
-
-
-    //    //Eliminar
-    //    public Task<int> DeleteEstudianteAsync(Estudiante estudiante)
-    //    {
-    //        return _database.DeleteAsync(estudiante);
-    //    }
-
-
-    //    #endregion
-
-
-    //}
-
-    #endregion
+    
 }

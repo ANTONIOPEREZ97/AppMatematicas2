@@ -2,21 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MiResidencia20.Views.BienvenidaPage" Title="Bienvenido">
     <ScrollView>
-        <StackLayout >
-           
+        <StackLayout Padding="0,40">
+            <Image Source="logoApp.png" WidthRequest="200"></Image>
 
-            <Image Source="logoApp.png" Aspect="AspectFit"></Image>
-
-
-            <Frame BackgroundColor="White" Margin="0,-50,0,0" CornerRadius="12" HasShadow="False">
-                <StackLayout Margin="80,130,80,0">
-                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro"
-                        WidthRequest="45" HeightRequest="40"/>
+                <StackLayout Margin="20,150" Spacing="25">
+                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro" HeightRequest="45"  CornerRadius="3"/>
+                   <Button Text="Iniciar sesión " Clicked="Btn_IniciarSesion" HeightRequest="45" Opacity="0.6" Padding="0" CornerRadius="3"/>
                 </StackLayout>
-            </Frame>
-                
-            
-            
+
+            <StackLayout HorizontalOptions="StartAndExpand"  Margin="50,60">
+                <Label Text="© 2020 @DebianISC.Inc, All Rights Reserved" TextColor="#333333" FontSize="10" FontAttributes="None"/>
+            </StackLayout>
         </StackLayout>
     </ScrollView>
 </ContentPage>

@@ -26,7 +26,7 @@
                        <Frame  Grid.Column="0" Grid.Row="0" Margin="3" HasShadow="True">
                             <StackLayout Padding="4">
                             <Label Text="Unidad 1" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                <Image   Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                <Image   Source="icono_Unidad1.png" HeightRequest="100"></Image>
                                 <Label   Text="Números reales" Style="{StaticResource Lbl_cards}"/>
                                 <Button  Clicked="Btn_IrAEvaluacionU1" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                             </StackLayout>
@@ -35,71 +35,71 @@
                        <Frame  Grid.Column="1" Grid.Row="0" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 2" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad2.png" HeightRequest="100"></Image>
                                    <Label  Text="Exponentes y radicales" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU2"  Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>
                            </Frame>
 
-                       <Frame  Grid.Column="0" Grid.Row="1" Margin="3">
+                       <Frame  Grid.Column="0" Grid.Row="1" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 3" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad3.png" HeightRequest="100"></Image>
                                    <Label  Text="Expresiones algebraicas" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU3" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>
                            </Frame>
 
-                       <Frame  Grid.Column="1" Grid.Row="1" Margin="3">
+                       <Frame  Grid.Column="1" Grid.Row="1" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 4" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad4.png" HeightRequest="100"></Image>
                                    <Label  Text="Expresiones racionales" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU4" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>
                            </Frame>
 
-                       <Frame  Grid.Column="0" Grid.Row="2" Margin="3">
+                       <Frame  Grid.Column="0" Grid.Row="2" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 5" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad5.png" HeightRequest="100"></Image>
                                    <Label  Text="Ecuaciones" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU5" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>
                            </Frame>
 
-                       <Frame  Grid.Column="1" Grid.Row="2" Margin="3">
+                       <Frame  Grid.Column="1" Grid.Row="2" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 6" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad6.png" HeightRequest="100"></Image>
                                    <Label  Text="Modelado con ecuaciones" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU6" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>
                            </Frame>
 
-                       <Frame  Grid.Column="0" Grid.Row="3" Margin="3">
+                       <Frame  Grid.Column="0" Grid.Row="3" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 7" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad7.png" HeightRequest="100"></Image>
                                    <Label  Text="Rectas" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU7" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>
 
                            </Frame>
 
-                       <Frame  Grid.Column="1" Grid.Row="3" Margin="3">
+                       <Frame  Grid.Column="1" Grid.Row="3" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 8" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad8.png" HeightRequest="100"></Image>
                                    <Label  Text="Logaritmos y exponeciales" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU8" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>
                            </Frame>
 
-                        <Frame  Grid.Column="0" Grid.Row="4" Margin="3">
+                        <Frame  Grid.Column="0" Grid.Row="4" Margin="3" HasShadow="True">
                                <StackLayout Padding="4">
                                <Label Text="Unidad 9" HorizontalOptions="CenterAndExpand" TextColor="Black"/>
-                                   <Image  Source="icono_Evaluar.png" HeightRequest="100"></Image>
+                                   <Image  Source="icono_Unidad9.png" HeightRequest="100"></Image>
                                    <Label  Text="Logaritmos y exponeciales" Style="{StaticResource Lbl_cards}"/>
                                    <Button Clicked="Btn_IrAEvaluacionU9" Text="Realizar" Style="{StaticResource Btn_cards}"></Button>
                               </StackLayout>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiResidencia20.Views.Logueo.IniciarSesionPage">
+
+    <ScrollView>
+        <StackLayout Margin="10,70">
+            <Label Text="¡Hola de nuevo!" TextColor="Black" HorizontalOptions="CenterAndExpand"
+                   FontSize="20"/>
+
+            <Label Text="Inicia sesión con tu nombre de usuario para empezar..."
+                   TextColor="Black" HorizontalOptions="StartAndExpand"  FontAttributes="None"/>
+
+            <StackLayout Margin="10,60">
+                
+                            <Frame HasShadow="True">
+                                <Entry Placeholder="Nombre de usuario"  Keyboard="Text"
+                                       x:Name="nombreUsuarioRegistradoEntry"/>
+                            </Frame>
+
+                 <Button Text="Iniciar sesión " Clicked="Btn_IniciarConUsuario"
+                         HeightRequest="45"  Padding="0" CornerRadius="3" Margin="0,15"/>
+
+
+            </StackLayout>
+        </StackLayout>
+   </ScrollView>
+</ContentPage>

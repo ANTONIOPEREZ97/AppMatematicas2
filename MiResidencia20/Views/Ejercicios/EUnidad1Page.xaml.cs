@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MiResidencia20.Views.Ejercicios;
-
 using Xamarin.Forms;
 
 namespace MiResidencia20.Views.Ejercicios
@@ -10,20 +9,11 @@ namespace MiResidencia20.Views.Ejercicios
 
     public partial class EUnidad1Page : ContentPage
     {
-        //Mis variables globales
+     
 
         int contadorACiertoCorrecto = 0;
 
-
-        string[] nivel =
-        {
-            "Nivel básico",
-            "Nivel intermedio",
-            "Nivel avanzado"
-        };
-
-        //<--Ejercios-->
-        //Básicos 1/3 | Frame.BackgroundColor="#C4ECE7"  Margin="3,40" CornerRadius="3"
+        //Básicos 1/3 | Frame.BackgroundColor="#C4ECE7" 
         string[] primerEjercicio=
         {
               //1:R = B. Números naturales
@@ -119,7 +109,6 @@ namespace MiResidencia20.Views.Ejercicios
             "B. *Falso"
         };
 
-
         string[] decimoEjercicio =
         {
             //10:R = A. Verdadero
@@ -135,12 +124,19 @@ namespace MiResidencia20.Views.Ejercicios
 
         }
 
+        
         int contadorClicks = 0;
         void   Btn_siguiente(System.Object sender, System.EventArgs e)
         {
+            
             switch (contadorClicks)
+
             {
-                case 0:  //1:R = B. Números naturales
+                case 0:
+                    DisplayAlert("Ejercicios ", "Básico,Intermedio y Avanzado", "ok");
+                    break;
+
+                case 1:  //1:R = B. Números naturales
 
                     //Enlazo Xaml con array del Cs
                     labelPreguntaDescripcion.Text = primerEjercicio[0];
@@ -152,24 +148,19 @@ namespace MiResidencia20.Views.Ejercicios
                     {
                         contadorACiertoCorrecto += 1;// 1.Le sumo 1 Pt
                         DisplayAlert("Acierto", $"Correcta", "Ok");//4.Imprimo mensaje correcta
-                        labelRespuestaB.TextColor = Color.Green;// 2. Cambio de color la respuesta ||Verificar a todos Full
-                        Task.Delay(10000);// 3.Hago una pausa
-
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
                         DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
-                        labelRespuestaB.TextColor = Color.Green;//2. Le muestro cual fue la respuesta coreccta color verde
-                        Task.Delay(3000); // 3.Hago una pausa
                     }
 
-                    LimpiarFormularioDePreguntas();
+                    //LimpiarFormularioDePreguntas();
                     break;
 
 
 
-                case 1: //2:R = A. Números enteros
+                case 2: //2:R = A. Números enteros
 
                     labelPreguntaDescripcion.Text = segundoEjercicio[0];
                     labelRespuestaA.Text = segundoEjercicio[1];
@@ -179,16 +170,12 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkA.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
                         
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
                       
                     }
@@ -196,7 +183,7 @@ namespace MiResidencia20.Views.Ejercicios
 
 
 
-                case 2: //3:R = C. Números irracionales
+                case 3: //3:R = C. Números irracionales
 
                     labelPreguntaDescripcion.Text = tercerEjercicio[0];
                     labelRespuestaA.Text = tercerEjercicio[1];
@@ -206,23 +193,16 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkC.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaC.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
-                     
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaC.TextColor = Color.Green;
-                        Task.Delay(3000);
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                     
-                    }
+                        DisplayAlert("Respuesta", $"Incorecta", "Ok");                    }
                     break;
 
 
-                case 3:  //4:R = A.Conmutativa
+                case 4:  //4:R = A.Conmutativa
 
                     labelPreguntaDescripcion.Text = cuartoEjercicio[0];
                     labelRespuestaA.Text = cuartoEjercicio[1];
@@ -232,24 +212,18 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkA.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
-                       
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                        
                     }
                     break;
 
 
 
-                case 4: //5:R = A. Asociativa
+                case 5: //5:R = A. Asociativa
 
                     labelPreguntaDescripcion.Text = quintoEjercicio[0];
                     labelRespuestaA.Text = quintoEjercicio[1];
@@ -259,21 +233,17 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkA.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
                        
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
                     }
                     break;
 
-                case 5:  //6:R = C. Distributiva
+                case 6:  //6:R = C. Distributiva
 
                     labelPreguntaDescripcion.Text = sextoEjercicio[0];
                     labelRespuestaA.Text = sextoEjercicio[1];
@@ -283,24 +253,18 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkC.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaC.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
-                       
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaC.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                       
                     }
                     break;
 
 
 
-                case 6: //7:R = A. Verdadero
+                case 7: //7:R = A. Verdadero
 
                     labelPreguntaDescripcion.Text = septimoEjercicio[0];
                     labelRespuestaA.Text = septimoEjercicio[1];
@@ -313,22 +277,16 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkA.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                        
+                        DisplayAlert("Acierto", $"Correcta", "Ok"); 
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                        
                     }
                     break;
 
-                case 7: //8:R = B. Falso 
+                case 8: //8:R = B. Falso 
 
                     labelPreguntaDescripcion.Text = octavoEjercicio[0];
                     labelRespuestaA.Text = octavoEjercicio[1];
@@ -340,22 +298,16 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkB.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaB.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
-                       
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaB.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                      
                     }
                     break;
 
-                case 8: //9:R = B. Falso
+                case 9: //9:R = B. Falso
 
                     labelPreguntaDescripcion.Text = novenoEjercicio[0];
                     labelRespuestaA.Text = novenoEjercicio[1];
@@ -367,22 +319,16 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkB.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaB.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
-                      
                     }
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaB.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                        
                     }
                     break;
 
-                case 9:  //10:R = A. Verdadero
+                case 10:  //10:R = A. Verdadero
 
                     labelPreguntaDescripcion.Text = decimoEjercicio[0];
                     labelRespuestaA.Text = decimoEjercicio[1];
@@ -394,8 +340,6 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkA.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Acierto", $"Correcta", "Ok");
                         //Nueva implementación 
                         DisplayAlert("Califición", $"{contadorACiertoCorrecto}%", "Ok");
@@ -403,8 +347,6 @@ namespace MiResidencia20.Views.Ejercicios
                     else
                     {
                         contadorACiertoCorrecto += 0;
-                        labelRespuestaA.TextColor = Color.Green;
-                        Task.Delay(3000);
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
                         DisplayAlert("Califición", $"{contadorACiertoCorrecto}%", "Ok");
                     }
@@ -413,28 +355,20 @@ namespace MiResidencia20.Views.Ejercicios
             }
             LimpiarChecks();
             contadorClicks++;
+            
 
-        }
+        }//fin Boton
+
 
         #region Methods
+        public void LimpiarFormularioDePreguntas()
+        {
+            labelPreguntaDescripcion.Text = string.Empty;
+            labelRespuestaA.Text = string.Empty;
+            labelRespuestaB.Text = string.Empty;
+            labelRespuestaC.Text = string.Empty;
+        }
 
-            //limpio Formulario de preguntas
-            public void LimpiarTextoDeNivel()
-            {
-                labelNivel.Text = string.Empty;
-
-            }
-
-            //limpio Formulario de preguntas
-            public void LimpiarFormularioDePreguntas()
-            {
-                labelPreguntaDescripcion.Text = string.Empty;
-                labelRespuestaA.Text = string.Empty;
-                labelRespuestaB.Text = string.Empty;
-                labelRespuestaC.Text = string.Empty;
-            }
-
-        //limpio Formulario de preguntas
         public void LimpiarChecks()
         {
             checkA.IsChecked = false;

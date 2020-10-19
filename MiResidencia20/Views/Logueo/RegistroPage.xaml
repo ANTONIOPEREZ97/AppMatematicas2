@@ -16,8 +16,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
 
-                       <Image Source="logo_TecNM.png" HeightRequest="100" WidthRequest="100"  Grid.Column="0" Grid.Row="0"/>
-                       <Image Source="logo_ITTG.png" HeightRequest="100" WidthRequest="100"  Grid.Column="1" Grid.Row="0"/>
+                       <Image Source="logo_TecNM.png" HeightRequest="90" WidthRequest="90"  Grid.Column="0" Grid.Row="0"/>
+                       <Image Source="logo_ITTG.png" HeightRequest="90" WidthRequest="90"  Grid.Column="1" Grid.Row="0"/>
                 </Grid>
             
              
@@ -43,7 +43,7 @@
                         <StackLayout Grid.Column="1" Grid.Row="0">
                             <Label Text="Nombre"/>
                             <Frame HasShadow="True">
-                                <Entry Placeholder="Nombre de Usuario"  Keyboard="Text"  x:Name="nombreCompletoEntry"/>
+                                <Entry Placeholder="Nombre del usuario"  Keyboard="Text"  x:Name="nombreEntry"/>
                             </Frame>
                         </StackLayout>
 
@@ -52,7 +52,7 @@
                         <StackLayout  Grid.Column="1" Grid.Row="1">
                             <Label Text="Carrera"/>
                             <Frame HasShadow="True">
-                                <Entry  Placeholder="Nombre de la Carrera" Keyboard="Text" x:Name="carreraEntry"/>
+                                <Entry  Placeholder="Nombre de la carrera" Keyboard="Text" x:Name="carreraEntry"/>
                             </Frame>
                         </StackLayout>
 
@@ -78,16 +78,8 @@
                         <StackLayout  Grid.ColumnSpan="2" Grid.Row="4" Margin="80,50">
                         <Button Text="Registrarse" Clicked="Btn_Registrar" WidthRequest="20"/>
                         </StackLayout>
-
-       
-            
                 </Grid>
-
             </StackLayout>
-
-
-
-        
     </StackLayout>
   </ScrollView>
 </ContentPage>

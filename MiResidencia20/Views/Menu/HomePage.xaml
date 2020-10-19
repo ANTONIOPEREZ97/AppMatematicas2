@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MiResidencia20.Views.Menu.HomePage">
 
-  <StackLayout>
+  <StackLayout Padding="0,40">
+      <Image Source="logoApp.png" WidthRequest="180"></Image>
     <ListView   HasUnevenRows="True" x:Name="ListaDatosAlumno">
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -11,15 +12,21 @@
                            <!--Uso de Binding sin patron MVVM-->
                         
 
-                        <Label Text="{Binding NombreCompleto}" FontFamily="bold" TextColor="Black" FontSize="19"
+                        <Label Text="{Binding Nombre}" FontFamily="bold" TextColor="Black" FontSize="19"
                                HorizontalOptions="CenterAndExpand"/>
 
                          <Label Text="{Binding Carrera}" FontFamily="bold" TextColor="Silver"
                                 HorizontalOptions="CenterAndExpand" Padding="15"
-                                FontSize="13" FontAttributes="Italic"/>
+                                FontSize="15" FontAttributes="Italic"/>
 
                         <Label Text="{Binding FechaCreacion}" FontFamily="bold"
                                TextColor="Silver" HorizontalOptions="CenterAndExpand"/>
+
+
+                     <StackLayout Orientation="Horizontal" Padding="5">
+                        <Label Text="Grupo" FontFamily="bold" TextColor="Silver" HorizontalOptions="CenterAndExpand"/>
+                        <Label Text="Periodo" FontFamily="bold" TextColor="Silver" HorizontalOptions="CenterAndExpand"/>
+                     </StackLayout>
 
                       <StackLayout Orientation="Horizontal" Padding="5">
                         <Label Text="{Binding Grupo}" FontFamily="bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>

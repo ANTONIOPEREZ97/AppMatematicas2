@@ -146,7 +146,16 @@
     <BundleResource Include="Resources\icono_Grupo.png" />
     <BundleResource Include="Resources\icono_Periodo.png" />
     <BundleResource Include="Resources\logo_ITTG.png" />
-    <BundleResource Include="Resources\SplashSCreen.png" />
+    <BundleResource Include="Resources\icono_Unidad1.png" />
+    <BundleResource Include="Resources\icono_Unidad2.png" />
+    <BundleResource Include="Resources\icono_Unidad3.png" />
+    <BundleResource Include="Resources\icono_Unidad4.png" />
+    <BundleResource Include="Resources\icono_Unidad5.png" />
+    <BundleResource Include="Resources\icono_Unidad6.png" />
+    <BundleResource Include="Resources\icono_Unidad7.png" />
+    <BundleResource Include="Resources\icono_Unidad8.png" />
+    <BundleResource Include="Resources\icono_Unidad9.png" />
+    <BundleResource Include="Resources\logoApp.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\icon.png">
