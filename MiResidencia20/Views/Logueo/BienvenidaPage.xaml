@@ -6,8 +6,8 @@
             <Image Source="logoApp.png" WidthRequest="200"></Image>
 
                 <StackLayout Margin="20,150" Spacing="25">
-                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro" HeightRequest="45"  CornerRadius="3"/>
-                   <Button Text="Iniciar sesión " Clicked="Btn_IniciarSesion" HeightRequest="45" Opacity="0.6" Padding="0" CornerRadius="3"/>
+                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro" HeightRequest="45"/>
+                   <Button Text="Iniciar sesión " Clicked="Btn_IniciarSesion" HeightRequest="45" Opacity="0.6"/>
                 </StackLayout>
 
             <StackLayout HorizontalOptions="StartAndExpand"  Margin="50,60">

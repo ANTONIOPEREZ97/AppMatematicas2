@@ -15,10 +15,10 @@
                 
                             <Frame HasShadow="True">
                                 <Entry Placeholder="Nombre de usuario"  Keyboard="Text"
-                                       x:Name="nombreUsuarioRegistradoEntry"/>
+                                       x:Name="nombreUsuarioEntry"/>
                             </Frame>
 
-                 <Button Text="Iniciar sesión " Clicked="Btn_IniciarConUsuario"
+                 <Button Text="Iniciar sesión " Clicked="Btn_IniciarConUsuario" 
                          HeightRequest="45"  Padding="0" CornerRadius="3" Margin="0,15"/>
 
 

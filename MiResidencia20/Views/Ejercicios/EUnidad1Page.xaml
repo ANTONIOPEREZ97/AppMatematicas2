@@ -8,13 +8,13 @@
       <ScrollView>
         <StackLayout>
             <StackLayout Orientation="Horizontal">
-             <Label x:Name="labelNivel" Text="Nivel básico"  FontAttributes="Bold" FontSize="15" TextColor="Silver" />
-            <Label x:Name="labelContadorPreguntas"   HorizontalOptions="EndAndExpand" FontAttributes ="Bold" FontSize="15" TextColor="Silver"/>
+            <Label x:Name="labelContadorPreguntas"   HorizontalOptions="CenterAndExpand" FontAttributes ="Bold" FontSize="15" TextColor="Silver" Text="Preguntas: /5"/>
             </StackLayout>
-           
-            <Frame BackgroundColor="White"  Margin="2" CornerRadius="3" BorderColor="#C4ECE7" HeightRequest="400">
+
+
+            <Frame BackgroundColor="White" CornerRadius="3" BorderColor="#C4ECE7" HeightRequest="400" HasShadow="True">
                 <StackLayout>
-                 <Label x:Name="labelPreguntaDescripcion" 
+                 <Label x:Name="labelPreguntaDescripcion"
                         Style="{StaticResource Lbl_pregunta}"/>
                    <StackLayout>
                        <Grid>
@@ -30,21 +30,18 @@
                             </Grid.ColumnDefinitions>
                       
                          <CheckBox Grid.Column="0" Grid.Row="0" x:Name="checkA"/>  <Label  x:Name="labelRespuestaA"   Grid.Column="1" Grid.Row="0"  Style="{StaticResource Lbl_respuestaOpciones}"/>
-                         <CheckBox Grid.Column="0" Grid.Row="1" x:Name="checkB" /> <Label  x:Name="labelRespuestaB"   Grid.Column="1" Grid.Row="1"   Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="1" x:Name="checkB"/> <Label  x:Name="labelRespuestaB"   Grid.Column="1" Grid.Row="1"   Style="{StaticResource Lbl_respuestaOpciones}"/>
                          <CheckBox Grid.Column="0" Grid.Row="2" x:Name="checkC"/>  <Label  x:Name="labelRespuestaC"   Grid.Column="1" Grid.Row="2"     Style="{StaticResource Lbl_respuestaOpciones}"/>
                        </Grid>
                     </StackLayout>
                 </StackLayout>
             </Frame>
 
-                    
-            <StackLayout>
-
-                <Button Text="siguiente"  Clicked="Btn_siguiente"
-                HorizontalOptions="Center" WidthRequest="150"/>
+                <Button Text="Siguiente"  Clicked="Btn_siguiente" Margin="0,20" 
+                HorizontalOptions="Center" WidthRequest="180"/>
                        
 
-            </StackLayout>
+            
         </StackLayout>
      </ScrollView>
 </StackLayout>

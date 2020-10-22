@@ -9,7 +9,7 @@ namespace MiResidencia20.Models
         [PrimaryKey, AutoIncrement,NotNull]
         //Declaro mis propiedades
         public int Id { get; set; }
-        public String Nombre { get; set; } //Loguea para iniciar sesion
+        public String Nombre { get; set; } //Nombre de logueo para iniciar sesion
         public String Apellido{ get; set; }
         public String Carrera { get; set; }
         public String Grupo { get; set; }

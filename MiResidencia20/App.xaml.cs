@@ -15,6 +15,7 @@ namespace MiResidencia20
         public App()
         {
             InitializeComponent();
+
             //2.Creo un meto-do
             InitializeDatabase();
             MainPage = new  NavigationPage (new BienvenidaPage());
@@ -30,7 +31,7 @@ namespace MiResidencia20
 
             //3.Inicializo Context enviandole la ruta de la BD al meto-do DatabeContext
             Context = new DatabaseContext(dbPath);
-          
+  
         }
 
 

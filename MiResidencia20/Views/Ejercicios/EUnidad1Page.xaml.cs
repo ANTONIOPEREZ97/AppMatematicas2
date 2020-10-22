@@ -9,12 +9,11 @@ namespace MiResidencia20.Views.Ejercicios
 
     public partial class EUnidad1Page : ContentPage
     {
-     
-
         int contadorACiertoCorrecto = 0;
 
+        #region DefinitionsExcercise
         //Básicos 1/3 | Frame.BackgroundColor="#C4ECE7" 
-        string[] primerEjercicio=
+        string[] primerEjercicio =
         {
               //1:R = B. Números naturales
             "1.Son aquellos que no necesitan representarse como una fracción o un decimal." +
@@ -75,7 +74,7 @@ namespace MiResidencia20.Views.Ejercicios
             "6.Propiedad de los números reales que cuando multiplicamos un número por una suma de dos números" +
               " obtenemos el mismo resultado si multiplicamos el número por cada uno de los términos" +
               "y luego sumamos los resultados; A(B+C)=AB+AC,(B+C)A=AB+AC:",
-                             
+
             "A. Conmutatativa",
             "B. Asociativa",
             "C. *Distributiva"
@@ -101,7 +100,7 @@ namespace MiResidencia20.Views.Ejercicios
             "B. *Falso"
         };
 
-        string[] novenoEjercicio = 
+        string[] novenoEjercicio =
         {
             //9:R = B. Falso
             "9.Verficar si  la desigualdad es verdadero o falsa -1/2 < -1 : ",
@@ -117,132 +116,10 @@ namespace MiResidencia20.Views.Ejercicios
             "B. Falso"
         };
 
-        public  EUnidad1Page()
-        {
-  
-            InitializeComponent();
+        #endregion
 
-        }
-
-        
-        int contadorClicks = 0;
-        void   Btn_siguiente(System.Object sender, System.EventArgs e)
-        {
-            
-            switch (contadorClicks)
-
-            {
-                case 0:
-                    DisplayAlert("Ejercicios ", "Básico,Intermedio y Avanzado", "ok");
-                    break;
-
-                case 1:  //1:R = B. Números naturales
-
-                    //Enlazo Xaml con array del Cs
-                    labelPreguntaDescripcion.Text = primerEjercicio[0];
-                    labelRespuestaA.Text = primerEjercicio[1];
-                    labelRespuestaB.Text = primerEjercicio[2];
-                    labelRespuestaC.Text = primerEjercicio[3];
-
-                    if (checkB.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;// 1.Le sumo 1 Pt
-                        DisplayAlert("Acierto", $"Correcta", "Ok");//4.Imprimo mensaje correcta
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
-                    }
-
-                    //LimpiarFormularioDePreguntas();
-                    break;
-
-
-
-                case 2: //2:R = A. Números enteros
-
-                    labelPreguntaDescripcion.Text = segundoEjercicio[0];
-                    labelRespuestaA.Text = segundoEjercicio[1];
-                    labelRespuestaB.Text = segundoEjercicio[2];
-                    labelRespuestaC.Text = segundoEjercicio[3];
-
-                    if (checkA.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                        
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                      
-                    }
-                    break;
-
-
-
-                case 3: //3:R = C. Números irracionales
-
-                    labelPreguntaDescripcion.Text = tercerEjercicio[0];
-                    labelRespuestaA.Text = tercerEjercicio[1];
-                    labelRespuestaB.Text = tercerEjercicio[2];
-                    labelRespuestaC.Text = tercerEjercicio[3];
-
-                    if (checkC.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");                    }
-                    break;
-
-
-                case 4:  //4:R = A.Conmutativa
-
-                    labelPreguntaDescripcion.Text = cuartoEjercicio[0];
-                    labelRespuestaA.Text = cuartoEjercicio[1];
-                    labelRespuestaB.Text = cuartoEjercicio[2];
-                    labelRespuestaC.Text = cuartoEjercicio[3];
-
-                    if (checkA.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                    }
-                    break;
-
-
-
-                case 5: //5:R = A. Asociativa
-
-                    labelPreguntaDescripcion.Text = quintoEjercicio[0];
-                    labelRespuestaA.Text = quintoEjercicio[1];
-                    labelRespuestaB.Text = quintoEjercicio[2];
-                    labelRespuestaC.Text = quintoEjercicio[3];
-
-                    if (checkA.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                       
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                    }
-                    break;
-
+        #region ComplementsExcercise
+        /*
                 case 6:  //6:R = C. Distributiva
 
                     labelPreguntaDescripcion.Text = sextoEjercicio[0];
@@ -277,7 +154,7 @@ namespace MiResidencia20.Views.Ejercicios
                     if (checkA.IsChecked == true)
                     {
                         contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok"); 
+                        DisplayAlert("Acierto", $"Correcta", "Ok");
                     }
                     else
                     {
@@ -312,7 +189,7 @@ namespace MiResidencia20.Views.Ejercicios
                     labelPreguntaDescripcion.Text = novenoEjercicio[0];
                     labelRespuestaA.Text = novenoEjercicio[1];
                     labelRespuestaB.Text = novenoEjercicio[2];
-                    
+
                     //checkC.IsVisible = false;
                     //labelRespuestaC.IsVisible = false;
 
@@ -348,19 +225,162 @@ namespace MiResidencia20.Views.Ejercicios
                     {
                         contadorACiertoCorrecto += 0;
                         DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                        DisplayAlert("Califición", $"{contadorACiertoCorrecto}%", "Ok");
+                        DisplayAlert("Califición", $"{contadorACiertoCorrecto}%","Ok");
+                    }
+                    break;
+                    */
+        #endregion
+
+        public EUnidad1Page()
+        {
+            InitializeComponent();
+            CargarPreguntaUno();
+        }
+
+        public void CargarPreguntaUno()
+        {
+            //1:R = B. Números naturales
+            //Enlazo Xaml con array del Cs
+            labelPreguntaDescripcion.Text = primerEjercicio[0];
+            labelRespuestaA.Text = primerEjercicio[1];
+            labelRespuestaB.Text = primerEjercicio[2];
+            labelRespuestaC.Text = primerEjercicio[3];
+
+        }
+
+       
+        int    contadorClicks = 1;
+        void   Btn_siguiente(System.Object sender, System.EventArgs e)
+        {
+            #region SwitchExcersice
+            switch (contadorClicks)
+            {
+                case 1:  //1:R = B. Números naturales
+
+                    // click==1 Ya solo verifica lo que se selecciono de la respuesta por que la  vista ya se cargo
+                    if (checkB.IsChecked == true)
+                    {
+                        contadorACiertoCorrecto += 1;// 1.Le sumo 1 Pt
+                        DisplayAlert("Acierto", $"Correcta", "Ok");//4.Imprimo mensaje correcta
+                    }
+                    else
+                    {
+                        contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
+                        DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                    }
+
+                    // NOTA: Adelanto las el formulario de la PREGUNTA 2  
+                    labelPreguntaDescripcion.Text = segundoEjercicio[0];
+                    labelRespuestaA.Text = segundoEjercicio[1];
+                    labelRespuestaB.Text = segundoEjercicio[2];
+                    labelRespuestaC.Text = segundoEjercicio[3];
+                    break;
+
+                case 2: //2:R = A. Números enteros
+
+                    if (checkA.IsChecked == true)
+                    {
+                        contadorACiertoCorrecto += 1;
+                        DisplayAlert("Acierto", $"Correcta", "Ok");
+
+                    }
+                    else
+                    {
+                        contadorACiertoCorrecto += 0;
+                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
+                    }
+
+                    //PREGUNTA 3
+                    labelPreguntaDescripcion.Text = tercerEjercicio[0];
+                    labelRespuestaA.Text = tercerEjercicio[1];
+                    labelRespuestaB.Text = tercerEjercicio[2];
+                    labelRespuestaC.Text = tercerEjercicio[3];
+
+                    break;
+
+
+                case 3: //3:R = C. Números irracionales
+
+                    if (checkC.IsChecked == true)
+                    {
+                        contadorACiertoCorrecto += 1;
+                        DisplayAlert("Acierto", $"Correcta", "Ok");
+                    }
+                    else
+                    {
+                        contadorACiertoCorrecto += 0;
+                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
+                    }
+
+                    //PREGUNTA 4
+                    labelPreguntaDescripcion.Text = cuartoEjercicio[0];
+                    labelRespuestaA.Text = cuartoEjercicio[1];
+                    labelRespuestaB.Text = cuartoEjercicio[2];
+                    labelRespuestaC.Text = cuartoEjercicio[3];
+
+                    break;
+
+                case 4:  //4:R = A.Conmutativa
+
+                    if (checkA.IsChecked == true)
+                    {
+                        contadorACiertoCorrecto += 1;
+                        DisplayAlert("Acierto", $"Correcta", "Ok");
+                    }
+                    else
+                    {
+                        contadorACiertoCorrecto += 0;
+                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
+                    }
+
+                    //PREGUNTA 5
+                    labelPreguntaDescripcion.Text = quintoEjercicio[0];
+                    labelRespuestaA.Text = quintoEjercicio[1];
+                    labelRespuestaB.Text = quintoEjercicio[2];
+                    labelRespuestaC.Text = quintoEjercicio[3];
+
+                    break;
+
+                case 5: //5:R = A. Asociativa
+
+                    if (checkA.IsChecked == true)
+                    {
+                        DisplayAlert("Acierto", $"Correcta", "Ok");
+                        contadorACiertoCorrecto += 1;
+                    }
+                    else
+                    {
+                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
+                        contadorACiertoCorrecto += 0;                    }
+
+                    break;
+
+                case 6: //Mostrar Calificación de Acierto 1*20%
+                    var calificacionPorcentaje = contadorACiertoCorrecto * 20;
+
+                    if (calificacionPorcentaje >= 80)
+                    {
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Felicitaciones sigue así!", "Ok");
+                        Navigation.PopAsync();
+                    }
+
+                    else
+                    { //calicación <80
+                            DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Nunca dejes de aprender!", "Ok");
+                            Navigation.PopAsync();
                     }
                     break;
 
-            }
+            }//Switch
             LimpiarChecks();
             contadorClicks++;
-            
 
-        }//fin Boton
-
+            #endregion
+        }//Button
 
         #region Methods
+
+        /* !!!! NO SE NECESITA UN METODO LIMPIAR PREGUNTA SE PUEDE QUITAR!!!!
         public void LimpiarFormularioDePreguntas()
         {
             labelPreguntaDescripcion.Text = string.Empty;
@@ -368,6 +388,7 @@ namespace MiResidencia20.Views.Ejercicios
             labelRespuestaB.Text = string.Empty;
             labelRespuestaC.Text = string.Empty;
         }
+        */ 
 
         public void LimpiarChecks()
         {

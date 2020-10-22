@@ -43,23 +43,9 @@ namespace MiResidencia20.Views
                     Periodo = periodoEntry.Text,
                     FechaCreacion = DateTime.UtcNow.Date
                 };
-
-                var result = App.Context.InsertItemEstudianteAsync(estudiante);
-
-                //if (result ==1)
-                //{
-                //    await Navigation.PushAsync(new MenuTabbedPage());
-
-                //}
-                //else
-                //{
-                //    await DisplayAlert("Error", "No se pudo guardar los datos", "Ok");
-                //}
-         
             }
             catch (Exception ex)
             {
-
                 await DisplayAlert("Error",ex.Message, "ok");
             }
 

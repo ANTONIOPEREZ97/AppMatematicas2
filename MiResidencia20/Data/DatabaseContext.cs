@@ -18,16 +18,13 @@ namespace MiResidencia20.Data
             //2.Inicializo la conexion y le envio la ruta
             Connection = new SQLiteAsyncConnection(path);
             Connection.CreateTableAsync<Estudiante>().Wait();//Espero su creacion con el wait
-
         }
 
         //3.Meto-do necesario para guardar un objeto de tipo estudiante 
         public async  Task<int>InsertItemEstudianteAsync (Estudiante estudiante)
         {
-
             return await Connection.InsertAsync(estudiante);
         }
-
 
         //4. Para listar los elementos de la base de datos
 
@@ -35,19 +32,22 @@ namespace MiResidencia20.Data
         {     
             return await Connection.Table<Estudiante>().ToListAsync();
 
-
         }
 
-        //5. Meto-do Delete de la lista de datos
+        /*
+        //5. Meto-do para Validar el usuario Iniciar sesion
+        public async Task<List<Estudiante>> GetItemEstudiantesValidateAsync(string nombreUsuario )
+        {
+            return await Connection.QueryAsync<Estudiante>("SELECT * FROM Estudiante WHERE Nombre = "nombreUsuario" );
+
+        }
+        */
+
+        //6. Meto-do Delete de la lista de datos
         public async  Task<int> DeleteItemsEstudiantesAsync(Estudiante estudiante)
         {
-
             return await Connection.DeleteAsync(estudiante);
         }
-
-
-
-
 
 
     }

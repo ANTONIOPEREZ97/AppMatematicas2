@@ -52,7 +52,25 @@
                         <StackLayout  Grid.Column="1" Grid.Row="1">
                             <Label Text="Carrera"/>
                             <Frame HasShadow="True">
-                                <Entry  Placeholder="Nombre de la carrera" Keyboard="Text" x:Name="carreraEntry"/>
+                             <Entry  Placeholder="Nombre de la carrera" Keyboard="Text" x:Name="carreraEntry"/>
+
+                                <!--<Picker
+                                    Title="Seleccionar carrera"
+                                    TextColor="Black"
+                                    SelectedIndexChanged="x">
+
+                                    <Picker.Items>
+                                        <x:String>Ing. Mecánica</x:String>
+                                        <x:String>Ing. En Sistemas Computacionales</x:String>
+                                        <x:String>Ing. Electrónica</x:String>
+                                        <x:String>Ing. Eléctrica</x:String>
+                                        <x:String>Ing. Bioquímica</x:String>
+                                        <x:String>Ing. Química</x:String>
+                                        <x:String>Ing. En Gestión Empresarial </x:String>
+                                        <x:String>Ing. En Logística</x:String>
+
+                                    </Picker.Items>
+                                </Picker>-->
                             </Frame>
                         </StackLayout>
 
