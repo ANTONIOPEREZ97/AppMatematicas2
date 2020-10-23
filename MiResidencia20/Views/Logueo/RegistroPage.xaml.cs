@@ -41,7 +41,7 @@ namespace MiResidencia20.Views
                     Carrera = carreraEntry.Text,
                     Grupo = grupoEntry.Text,
                     Periodo = periodoEntry.Text,
-                    FechaCreacion = DateTime.UtcNow.Date
+                    FechaCreacion = DateTime.Now
                 };
             }
             catch (Exception ex)

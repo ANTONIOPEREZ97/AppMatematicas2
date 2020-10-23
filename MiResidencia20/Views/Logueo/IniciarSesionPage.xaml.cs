@@ -30,7 +30,7 @@ namespace MiResidencia20.Views.Logueo
             {
 
                 await Navigation.PushAsync(new MenuTabbedPage());
-                await DisplayAlert("Bienvenid@", "¡Comenzar a usar la App!", "Ok");
+                await DisplayAlert("Bienvenido", "AppMatemáticas", "Ok");
 
 
             }

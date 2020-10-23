@@ -249,8 +249,8 @@ namespace MiResidencia20.Views.Ejercicios
         }
 
        
-        int    contadorClicks = 1;
-        void   Btn_siguiente(System.Object sender, System.EventArgs e)
+        int contadorClicks = 1;
+        void Btn_siguiente(System.Object sender, System.EventArgs e)
         {
             #region SwitchExcersice
             switch (contadorClicks)
@@ -258,15 +258,22 @@ namespace MiResidencia20.Views.Ejercicios
                 case 1:  //1:R = B. Números naturales
 
                     // click==1 Ya solo verifica lo que se selecciono de la respuesta por que la  vista ya se cargo
-                    if (checkB.IsChecked == true)
+                    if (checkB.IsChecked == true && checkA.IsChecked == false && checkC.IsChecked == false)
                     {
                         contadorACiertoCorrecto += 1;// 1.Le sumo 1 Pt
-                        DisplayAlert("Acierto", $"Correcta", "Ok");//4.Imprimo mensaje correcta
+                        DisplayAlert("Respuesta", $"Correcta", "Ok");//4.Imprimo mensaje correcta
                     }
+
                     else
                     {
-                        contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                        if (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                             checkB.IsChecked == true && checkA.IsChecked == true ||
+                             checkB.IsChecked == true && checkC.IsChecked == true ||
+                             checkA.IsChecked == true || checkC.IsChecked == true)
+                        {
+                            contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
+                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                        }
                     }
 
                     // NOTA: Adelanto las el formulario de la PREGUNTA 2  
@@ -278,16 +285,23 @@ namespace MiResidencia20.Views.Ejercicios
 
                 case 2: //2:R = A. Números enteros
 
-                    if (checkA.IsChecked == true)
+                    if (checkA.IsChecked == true && checkB.IsChecked == false && checkC.IsChecked == false)
                     {
                         contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
+                        DisplayAlert("Respuesta", $"Correcta", "Ok");
 
                     }
+
                     else
                     {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
+                        if (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                             checkA.IsChecked == true && checkB.IsChecked == true ||
+                             checkA.IsChecked == true && checkC.IsChecked == true ||
+                             checkB.IsChecked == true || checkC.IsChecked == true)
+                        {
+                            contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
+                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                        }
                     }
 
                     //PREGUNTA 3
@@ -301,17 +315,23 @@ namespace MiResidencia20.Views.Ejercicios
 
                 case 3: //3:R = C. Números irracionales
 
-                    if (checkC.IsChecked == true)
+                    if (checkC.IsChecked == true && checkA.IsChecked == false && checkB.IsChecked == false)
                     {
                         contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
+                        DisplayAlert("Respuesta", $"Correcta", "Ok");
                     }
 
+                    else
+                    {
+                        if ( checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                             checkC.IsChecked == true && checkA.IsChecked == true ||
+                             checkC.IsChecked == true && checkB.IsChecked == true ||
+                             checkA.IsChecked == true || checkB.IsChecked == true)
+                        {
+                            contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
+                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                        }
+                    }
                     //PREGUNTA 4
                     labelPreguntaDescripcion.Text = cuartoEjercicio[0];
                     labelRespuestaA.Text = cuartoEjercicio[1];
@@ -322,15 +342,21 @@ namespace MiResidencia20.Views.Ejercicios
 
                 case 4:  //4:R = A.Conmutativa
 
-                    if (checkA.IsChecked == true)
+                    if (checkA.IsChecked == true && checkB.IsChecked == false && checkC.IsChecked == false)
                     {
                         contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
+                        DisplayAlert("Respuesta", $"Correcta", "Ok");
                     }
                     else
                     {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
+                        if ( checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                             checkA.IsChecked == true && checkB.IsChecked == true ||
+                             checkA.IsChecked == true && checkC.IsChecked == true ||
+                             checkB.IsChecked == true || checkC.IsChecked == true)
+                        {
+                            contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
+                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                        }
                     }
 
                     //PREGUNTA 5
@@ -343,16 +369,22 @@ namespace MiResidencia20.Views.Ejercicios
 
                 case 5: //5:R = A. Asociativa
 
-                    if (checkA.IsChecked == true)
+                    if (checkA.IsChecked == true && checkB.IsChecked == false && checkC.IsChecked == false)
                     {
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
+                        DisplayAlert("Respuesta", $"Correcta", "Ok");
                         contadorACiertoCorrecto += 1;
                     }
                     else
                     {
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                        contadorACiertoCorrecto += 0;                    }
-
+                        if ( checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                             checkA.IsChecked == true && checkB.IsChecked == true ||
+                             checkA.IsChecked == true && checkC.IsChecked == true ||
+                             checkB.IsChecked == true || checkC.IsChecked == true)
+                        {
+                            contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
+                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                        }
+                    }
                     break;
 
                 case 6: //Mostrar Calificación de Acierto 1*20%
@@ -366,8 +398,8 @@ namespace MiResidencia20.Views.Ejercicios
 
                     else
                     { //calicación <80
-                            DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Nunca dejes de aprender!", "Ok");
-                            Navigation.PopAsync();
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Nunca dejes de aprender!", "Ok");
+                        Navigation.PopAsync();
                     }
                     break;
 
@@ -379,17 +411,6 @@ namespace MiResidencia20.Views.Ejercicios
         }//Button
 
         #region Methods
-
-        /* !!!! NO SE NECESITA UN METODO LIMPIAR PREGUNTA SE PUEDE QUITAR!!!!
-        public void LimpiarFormularioDePreguntas()
-        {
-            labelPreguntaDescripcion.Text = string.Empty;
-            labelRespuestaA.Text = string.Empty;
-            labelRespuestaB.Text = string.Empty;
-            labelRespuestaC.Text = string.Empty;
-        }
-        */ 
-
         public void LimpiarChecks()
         {
             checkA.IsChecked = false;

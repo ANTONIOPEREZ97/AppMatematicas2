@@ -191,7 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MiResidencia20\MiResidencia20.csproj">
-      <Project>{9046F798-29E2-4A28-904B-D8B5245745AF}</Project>
+      <Project>{E1B2554D-7AAD-4FBA-89C7-3417D4E3F4BE}</Project>
       <Name>MiResidencia20</Name>
     </ProjectReference>
   </ItemGroup>
