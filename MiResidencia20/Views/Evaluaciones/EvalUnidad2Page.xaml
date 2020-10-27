@@ -3,10 +3,44 @@
              x:Class="MiResidencia20.Views.Evaluaciones.EvalUnidad2Page"
              Title="Evaluación">
 
-    <StackLayout>
+    <StackLayout Margin="5" BackgroundColor="White">
+    <Label Text="Unidad 2. Exponentes y radicales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+      <ScrollView>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+            <!--<Label x:Name="labelContadorPreguntas"   HorizontalOptions="CenterAndExpand" FontAttributes ="Bold" FontSize="15" TextColor="Silver" Text="Preguntas: /5"/>-->
+            </StackLayout>
 
-        <Label VerticalTextAlignment="Center" HorizontalOptions="CenterAndExpand"
-               Text="Evaluacion Unidad 2"/>
+            <Frame BackgroundColor="White" CornerRadius="3" BorderColor="#C4ECE7" HeightRequest="400" HasShadow="True">
+                <StackLayout>
+                 <Label x:Name="labelPreguntaDescripcion"
+                        Style="{StaticResource Lbl_pregunta}"/>
+                   <StackLayout>
+                       <Grid>
+                           <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
 
-    </StackLayout>
+                            <Grid.ColumnDefinitions>
+                               <ColumnDefinition/>
+                               <ColumnDefinition Width="12*"/>
+                            </Grid.ColumnDefinitions>
+                      
+                         <CheckBox Grid.Column="0" Grid.Row="0" x:Name="checkA"/>  <Label  x:Name="labelRespuestaA"   Grid.Column="1" Grid.Row="0"  Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="1" x:Name="checkB"/> <Label  x:Name="labelRespuestaB"   Grid.Column="1" Grid.Row="1"   Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="2" x:Name="checkC"/>  <Label  x:Name="labelRespuestaC"   Grid.Column="1" Grid.Row="2"     Style="{StaticResource Lbl_respuestaOpciones}"/>
+                       </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+                <Button Text="Siguiente"  Clicked="Btn_siguiente" Margin="0,20" 
+                HorizontalOptions="Center" WidthRequest="180"/>
+            
+            
+        </StackLayout>
+     </ScrollView>
+</StackLayout>
 </ContentPage>

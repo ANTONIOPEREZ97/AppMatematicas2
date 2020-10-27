@@ -8,7 +8,7 @@
       <ScrollView>
         <StackLayout>
 
-            <Frame BackgroundColor="White" CornerRadius="3" BorderColor="#C4ECE7" HeightRequest="400" HasShadow="True">
+            <Frame BackgroundColor="White" CornerRadius="3" BorderColor="#B0CFF4" HeightRequest="400" HasShadow="True">
                 <StackLayout>
                  <Label x:Name="labelPreguntaDescripcion"
                         Style="{StaticResource Lbl_pregunta}"/>

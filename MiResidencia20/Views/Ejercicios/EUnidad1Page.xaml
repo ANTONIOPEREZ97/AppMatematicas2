@@ -4,7 +4,7 @@
              Title="Ejercicio">
    
 <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad I. Números Reales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad I. Números reales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
             <StackLayout Orientation="Horizontal">
@@ -44,4 +44,5 @@
         </StackLayout>
      </ScrollView>
 </StackLayout>
+
 </ContentPage>

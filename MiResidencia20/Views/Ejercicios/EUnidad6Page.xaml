@@ -4,8 +4,40 @@
              Title="Ejercicio">
 
 
-    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
-        <Label Text="unidad 6 Ejercicios"/>
-    </StackLayout>
+    <!--<StackLayout Margin="5" BackgroundColor="White">
+    <Label Text="Unidad 6. Modelado con ecuaciones " Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+      <ScrollView>
+        <StackLayout>
+
+            <Frame BackgroundColor="White" CornerRadius="3" BorderColor="#B0CFF4" HeightRequest="400" HasShadow="True">
+                <StackLayout>
+                 <Label x:Name="labelPreguntaDescripcion"
+                        Style="{StaticResource Lbl_pregunta}"/>
+                   <StackLayout>
+                       <Grid>
+                           <Grid.RowDefinitions>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition Height="40"/>
+                            </Grid.RowDefinitions>
+
+                            <Grid.ColumnDefinitions>
+                               <ColumnDefinition/>
+                               <ColumnDefinition Width="12*"/>
+                            </Grid.ColumnDefinitions>
+                      
+                         <CheckBox Grid.Column="0" Grid.Row="0" x:Name="checkA"/> <Label  x:Name="labelRespuestaA"   Grid.Column="1" Grid.Row="0"  Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="1" x:Name="checkB"/> <Label  x:Name="labelRespuestaB"   Grid.Column="1" Grid.Row="1"   Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="2" x:Name="checkC"/> <Label  x:Name="labelRespuestaC"   Grid.Column="1" Grid.Row="2"     Style="{StaticResource Lbl_respuestaOpciones}"/>
+                       </Grid>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+                <Button Text="Siguiente"  Clicked="Btn_siguiente" Margin="0,20"
+                HorizontalOptions="Center" WidthRequest="180"/>
+        </StackLayout>
+     </ScrollView>
+</StackLayout>-->
 
 </ContentPage>
