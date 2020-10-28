@@ -54,7 +54,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] quintaPregunta =
         {
             //5:R = A. Verdadero
-            "10.Verficar si  la desigualdad es verdadero o falsa -π > -3:",
+            "5.Verficar si  la desigualdad es verdadero o falsa -π > -3:",
             "A. *Verdadero",
             "B. Falso",
             "C. Ninguno de los anteriores"

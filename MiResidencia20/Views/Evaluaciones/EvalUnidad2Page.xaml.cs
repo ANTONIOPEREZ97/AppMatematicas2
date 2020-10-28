@@ -24,7 +24,7 @@ namespace MiResidencia20.Views.Evaluaciones
         {
 
             //2:R = B. 3y^6/z 
-            "2. ¿Simpliqfique la expresión 6y⁷z/ 2yz² :",
+            "2. ¿Simplifique la expresión 6y⁷z/ 2yz² :",
             "A. 4y^8 Z  ",
             "B. *3y^6/z",
             "C. 3y^6/-z"
@@ -52,7 +52,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] quintaPregunta =
         {
             //5:R = A. 32000000 
-            "10. La expresión 3.20 X10⁷ en notación decimal es: ",
+            "5. La expresión 3.20 X10⁷ en notación decimal es: ",
             "A. *32000000",
             "B. 320000000",
             "C. 3200000000"
@@ -246,6 +246,6 @@ namespace MiResidencia20.Views.Evaluaciones
             checkC.IsChecked = false;
 
         }
-        #endregion Methods
+        #endregion 
     }
 }

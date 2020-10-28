@@ -7,7 +7,7 @@
   <ScrollView>
     <StackLayout>
         <StackLayout Margin="10">
-            <Label Text="Porcentajes de Evaluación" Style="{StaticResource Lbl_TituloPrincipal}"/>
+            <Label Text="» Porcentajes de Evaluación" Style="{StaticResource Lbl_TituloPrincipal}" HorizontalOptions="StartAndExpand"/>
         </StackLayout>
 
         <Grid Margin="15,5">
@@ -40,44 +40,44 @@
 
                      <!--Cuerpo con estilos Explicitos-->
 
-                     <Frame Grid.Row="1" Grid.Column="0"> <Label Text="1.Numeros Reales"/> </Frame>
+                     <Frame Grid.Row="1" Grid.Column="0"> <Label Text="1. Números reales"/> </Frame>
                      <Frame Grid.Row="1" Grid.Column="1"> <Label Text="1"     Style="{StaticResource Lbl_Unidad}"/></Frame>
                      <Frame Grid.Row="1" Grid.Column="2"> <Label Text="80%" Style="{StaticResource Lbl_Unidad}"/> </Frame>
 
-                     <Frame Grid.Row="2" Grid.Column="0"> <Label Text="2.Exponentes Y Radicales"/> </Frame>
+                     <Frame Grid.Row="2" Grid.Column="0"> <Label Text="2. Exponentes y radicales"/> </Frame>
                      <Frame Grid.Row="2" Grid.Column="1"> <Label Text="2"    Style="{StaticResource Lbl_Unidad}"/> </Frame>
                      <Frame Grid.Row="2" Grid.Column="2"> <Label Text="70%" Style="{StaticResource Lbl_Unidad}"/> </Frame>
 
-                     <Frame Grid.Row="3" Grid.Column="0"> <Label Text="3.Expresiones Algebraicas"/> </Frame>
+                     <Frame Grid.Row="3" Grid.Column="0"> <Label Text="3. Expresiones algebraicas"/> </Frame>
                      <Frame Grid.Row="3" Grid.Column="1"> <Label Text="3"     Style="{StaticResource Lbl_Unidad}" /> </Frame>
                      <Frame Grid.Row="3" Grid.Column="2"> <Label Text="Input" Style="{StaticResource Lbl_Unidad}"/> </Frame>
 
-                     <Frame Grid.Row="4" Grid.Column="0"> <Label Text="4.Expresiones Racionales"/> </Frame>
+                     <Frame Grid.Row="4" Grid.Column="0"> <Label Text="4. Expresiones racionales" /> </Frame>
                      <Frame Grid.Row="4" Grid.Column="1"> <Label Text="4"     Style="{StaticResource Lbl_Unidad}" /> </Frame>
                      <Frame Grid.Row="4" Grid.Column="2"> <Label Text="Input" Style="{StaticResource Lbl_Unidad}"/> </Frame>
 
-                     <Frame Grid.Row="5" Grid.Column="0"> <Label Text="5.Ecuaciones"/> </Frame>
+                     <Frame Grid.Row="5" Grid.Column="0"> <Label Text="5. Ecuaciones"/> </Frame>
                      <Frame Grid.Row="5" Grid.Column="1"> <Label Text="5"     Style="{StaticResource Lbl_Unidad}"/> </Frame>
                      <Frame Grid.Row="5" Grid.Column="2"> <Label Text="Input" Style="{StaticResource Lbl_Unidad}"/> </Frame>
 
-                     <Frame Grid.Row="6" Grid.Column="0"> <Label Text="6.Modelado con Ecuaciones"/> </Frame>
+                     <Frame Grid.Row="6" Grid.Column="0"> <Label Text="6. Modelado con ecuaciones"/> </Frame>
                      <Frame Grid.Row="6" Grid.Column="1"> <Label Text="6"     Style="{StaticResource Lbl_Unidad}"/> </Frame>
                      <Frame Grid.Row="6" Grid.Column="2"> <Label Text="Input" Style="{StaticResource Lbl_Unidad}"/> </Frame>
 
-                     <Frame Grid.Row="7" Grid.Column="0"> <Label Text="7.Rectas"/> </Frame>
+                     <Frame Grid.Row="7" Grid.Column="0"> <Label Text="7. Rectas"/> </Frame>
                      <Frame Grid.Row="7" Grid.Column="1"> <Label Text="7"     Style="{StaticResource Lbl_Unidad}"/> </Frame>
                      <Frame Grid.Row="7" Grid.Column="2"> <Label Text="Input" Style="{StaticResource Lbl_Unidad}"/> </Frame>
             
-                     <Frame Grid.Row="8" Grid.Column="0"> <Label Text="8.Logaritmos y Exponenciales"/> </Frame>
+                     <Frame Grid.Row="8" Grid.Column="0"> <Label Text="8. Logaritmos y exponenciales"/> </Frame>
                      <Frame Grid.Row="8" Grid.Column="1"> <Label Text="8"     Style="{StaticResource Lbl_Unidad}"/> </Frame>
                      <Frame Grid.Row="8" Grid.Column="2"> <Label Text="Input" Style="{StaticResource Lbl_Unidad}"/> </Frame>
 
-                     <Frame Grid.Row="9" Grid.Column="0"> <Label Text="9.Trigonometría de Triángulos Rectángulos"/> </Frame>
+                     <Frame Grid.Row="9" Grid.Column="0"> <Label Text="9. Trigonometría de triángulos rectángulos"/> </Frame>
                      <Frame Grid.Row="9" Grid.Column="1"> <Label Text="9"     Style="{StaticResource Lbl_Unidad}" /> </Frame>
                      <Frame Grid.Row="9" Grid.Column="2"> <Label Text="Input" Style="{StaticResource Lbl_Unidad}"  /> </Frame>
         </Grid>
         <StackLayout Margin="90,30">
-            <Button Text="Menú Principal" Clicked="Btn_IrAMenuPrincipal" CornerRadius="0"/>
+            <Button Text="Menú Principal" Clicked="Btn_IrAMenuPrincipal"/>
         </StackLayout> 
     </StackLayout>
   </ScrollView>
