@@ -3,7 +3,7 @@
              x:Class="MiResidencia20.Views.Ejercicios.EUnidad7Page"
              Title="Ejercicio">
 
-    <!--<StackLayout Margin="5" BackgroundColor="White">
+    <StackLayout Margin="5" BackgroundColor="White">
     <Label Text="Unidad 7. Rectas  " Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
@@ -37,7 +37,7 @@
                 HorizontalOptions="Center" WidthRequest="180"/>
         </StackLayout>
      </ScrollView>
-</StackLayout>-->
+</StackLayout>
 
 
 </ContentPage>

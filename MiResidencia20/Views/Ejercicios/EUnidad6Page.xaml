@@ -4,7 +4,7 @@
              Title="Ejercicio">
 
 
-    <!--<StackLayout Margin="5" BackgroundColor="White">
+    <StackLayout Margin="5" BackgroundColor="White">
     <Label Text="Unidad 6. Modelado con ecuaciones " Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
@@ -38,6 +38,6 @@
                 HorizontalOptions="Center" WidthRequest="180"/>
         </StackLayout>
      </ScrollView>
-</StackLayout>-->
+</StackLayout>
 
 </ContentPage>

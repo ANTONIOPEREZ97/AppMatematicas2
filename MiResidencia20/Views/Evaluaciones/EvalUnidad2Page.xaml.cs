@@ -14,9 +14,9 @@ namespace MiResidencia20.Views.Evaluaciones
             //1:R = B. x^14
             "1. Simplifique la expresión  x¹²x² :",
 
-            "A. 2x^14",
-            "B. *x^14",
-            "C. x^24"
+            "A. 2xˆ14",
+            "B. *xˆ14",
+            "C. xˆ24"
         };
 
 
@@ -25,18 +25,18 @@ namespace MiResidencia20.Views.Evaluaciones
 
             //2:R = B. 3y^6/z 
             "2. ¿Simplifique la expresión 6y⁷z/ 2yz² :",
-            "A. 4y^8 Z  ",
-            "B. *3y^6/z",
-            "C. 3y^6/-z"
+            "A. 4yˆ8 z  ",
+            "B. *3yˆ6/z",
+            "C. 3yˆ6/-z"
         };
 
         string[] terceraPregunta =
         {
             //3:R = C. 128y^14
             "3. Simplifique la expresion (2y²)⁷ : ",
-            "A. 2 y^14",
+            "A. 2 yˆ14",
             "B. 28 y",
-            "C. *128y^14"
+            "C. *128yˆ14"
         };
 
         string[] cuartaPregunta =
@@ -44,8 +44,8 @@ namespace MiResidencia20.Views.Evaluaciones
             //4:R = C. 8x^19 y^3
             "4. Simplifique la expresión (4x¹²y²) (2x⁷y):",
             "A. 4,032 xy",
-            "B. 288x^5 y",
-            "C. *8x^19 y^3"
+            "B. 288xˆ5 y",
+            "C. *8xˆ19 yˆ3"
 
         };
 

@@ -12,54 +12,55 @@ namespace MiResidencia20.Views.Evaluaciones
 
         string[] primeraPregunta =
        {
-            //1:R = 
-            "1. El resultado de (a +b)³ es :",
+            //1:R = B. Expresión fraccionaria 
+            "1. El cociente de dos expresiones algebraicas se denomina :",
 
-            "A. a³ - 2ab + b³",
-            "B. a³ + b³",
-            "C. *a³ + 3a²b - 3ab² + b³"
+            "A.  Expresión racional",
+            "B. *Expresión fraccionaria",
+            "C.  Expresión irracional "
         };
 
 
         string[] segundaPregunta =
         {
-            //2:R = 
-            "2. Qué tipo de polinomio es el siguiente x⁻¹ - x² + x³ - x⁴ :",
+            //2:R = A. Polinomios
+            "2.	Una expresión racional es una expresión fraccionaria donde " +
+                "el numerador y el denominador son :",
 
-            "A. *Cuarto término ",
-            "B. Cuarto grado",
-            "C. Sexto término"
+            "A. *Polinomios",
+            "B. Monomios",
+            "C. Binomios conjugados"
         };
 
         string[] terceraPregunta =
         {
-            //3:R = 
-            "3. Factorice la ecuación x² + 6x + 9: ",
+            //3:R = C. X ϵ R 
+            "3. Encuentre el dominio de la expresión 4x² - 10x +  3 :",
 
-            "A. (x - 3)²",
-            "B. *(x + 3)²",
-            "C. (x + 3)(x + 2)"
+            "A. x ∉ R",
+            "B. x ϵ N",
+            "C. *x ϵ R "
         };
 
         string[] cuartaPregunta =
         {
-            //4:R = 
-            "4. Multiplique la expresión algebraica (y + 2)³:",
+            //4:R = A. x + 2 / x² 
+            "4. Simplifique la expresión 1/x + 2 / 2x² :",
 
-            "A. *y³ + 6y² + 12y + 8 ",
-            "B. y³ + 6y² + 12y + 8",
-            "C. y³ + 6y² + 12y + 6"
+            "A. *x + 2 / x²",
+            "B. 3 / x²",
+            "C. 3 / x³"
 
         };
 
         string[] quintaPregunta =
         {
-            //5:R = 
-            "5.Encuentra el dominio de la expresión  √x + 3  ",
+            //5:R = B. x/yz
+            "5. Simplifique la expresión x/y /z :",
 
-            "A. *Dominio x ≥ -3",
-            "B. Dominio x ≤ -3",
-            "C. Dominio x = -3"
+            "A. y/zx",
+            "B. *x/yz",
+            "C. zx/y"
 
         };
         #endregion
@@ -71,7 +72,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
         public void CargarPreguntaUno()
         {
-            //1:R = 
+            //1:R = B. Expresión fraccionaria 
             labelPreguntaDescripcion.Text = primeraPregunta[0];
             labelRespuestaA.Text = primeraPregunta[1];
             labelRespuestaB.Text = primeraPregunta[2];
@@ -85,10 +86,10 @@ namespace MiResidencia20.Views.Evaluaciones
             #region SwitchExcersice
             switch (contadorClicks)
             {
-                case 1:  //
+                case 1: //1:R = B. Expresión fraccionaria 
 
                     // click==1 Ya solo verifica lo que se seleccionó de la respuesta por que la  vista ya se cargo
-                    if (checkC.IsChecked == true && checkA.IsChecked == false && checkB.IsChecked == false)
+                    if (checkB.IsChecked == true && checkA.IsChecked == false && checkC.IsChecked == false)
                     {
                         contadorACiertoCorrecto += 1;// 1.Le sumo 1 Pt
                         DisplayAlert("Respuesta", $"Correcta", "Ok");//4.Imprimo mensaje correcta
@@ -97,9 +98,9 @@ namespace MiResidencia20.Views.Evaluaciones
                     else
                     {
                         if (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
-                             checkC.IsChecked == true && checkA.IsChecked == true ||
-                             checkC.IsChecked == true && checkB.IsChecked == true ||
-                             checkA.IsChecked == true || checkB.IsChecked == true)
+                             checkB.IsChecked == true && checkA.IsChecked == true ||
+                             checkB.IsChecked == true && checkC.IsChecked == true ||
+                             checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
                             DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
@@ -113,7 +114,7 @@ namespace MiResidencia20.Views.Evaluaciones
                     labelRespuestaC.Text = segundaPregunta[3];
                     break;
 
-                case 2:  //2
+                case 2:  //2:R = A. Polinomios
 
                     if (checkA.IsChecked == true && checkB.IsChecked == false && checkC.IsChecked == false)
                     {
@@ -124,7 +125,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
                     else
                     {
-                        if (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                        if  (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
                              checkA.IsChecked == true && checkB.IsChecked == true ||
                              checkA.IsChecked == true && checkC.IsChecked == true ||
                              checkB.IsChecked == true || checkC.IsChecked == true)
@@ -143,9 +144,9 @@ namespace MiResidencia20.Views.Evaluaciones
                     break;
 
 
-                case 3: //
+                case 3: //3:R = C. X ϵ R 
 
-                    if (checkB.IsChecked == true && checkA.IsChecked == false && checkC.IsChecked == false)
+                    if (checkC.IsChecked == true && checkA.IsChecked == false && checkB.IsChecked == false)
                     {
                         contadorACiertoCorrecto += 1;
                         DisplayAlert("Respuesta", $"Correcta", "Ok");
@@ -153,10 +154,10 @@ namespace MiResidencia20.Views.Evaluaciones
 
                     else
                     {
-                        if (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
-                             checkB.IsChecked == true && checkA.IsChecked == true ||
-                             checkB.IsChecked == true && checkC.IsChecked == true ||
-                             checkA.IsChecked == true || checkC.IsChecked == true)
+                        if  (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                             checkC.IsChecked == true && checkA.IsChecked == true ||
+                             checkC.IsChecked == true && checkB.IsChecked == true ||
+                             checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
                             DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
@@ -170,7 +171,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
                     break;
 
-                case 4:  //4:R = 
+                case 4: //4:R = A. x + 2 / x² 
 
                     if (checkA.IsChecked == true && checkB.IsChecked == false && checkC.IsChecked == false)
                     {
@@ -179,7 +180,7 @@ namespace MiResidencia20.Views.Evaluaciones
                     }
                     else
                     {
-                        if (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
+                        if  (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
                              checkA.IsChecked == true && checkB.IsChecked == true ||
                              checkA.IsChecked == true && checkC.IsChecked == true ||
                              checkB.IsChecked == true || checkC.IsChecked == true)
@@ -197,9 +198,9 @@ namespace MiResidencia20.Views.Evaluaciones
 
                     break;
 
-                case 5:    //5:R = 
+                case 5:   //5:R = B. x/yz
 
-                    if (checkA.IsChecked == true && checkB.IsChecked == false && checkC.IsChecked == false)
+                    if (checkB.IsChecked == true && checkA.IsChecked == false && checkC.IsChecked == false)
                     {
                         DisplayAlert("Respuesta", $"Correcta", "Ok");
                         contadorACiertoCorrecto += 1;
@@ -207,9 +208,9 @@ namespace MiResidencia20.Views.Evaluaciones
                     else
                     {
                         if (checkA.IsChecked == false && checkB.IsChecked == false && checkC.IsChecked == false ||
-                             checkA.IsChecked == true && checkB.IsChecked == true ||
-                             checkA.IsChecked == true && checkC.IsChecked == true ||
-                             checkB.IsChecked == true || checkC.IsChecked == true)
+                             checkB.IsChecked == true && checkA.IsChecked == true ||
+                             checkB.IsChecked == true && checkC.IsChecked == true ||
+                             checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
                             DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
