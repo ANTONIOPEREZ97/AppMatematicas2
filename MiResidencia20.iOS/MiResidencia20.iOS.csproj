@@ -155,7 +155,7 @@
     <BundleResource Include="Resources\icono_Unidad7.png" />
     <BundleResource Include="Resources\icono_Unidad8.png" />
     <BundleResource Include="Resources\icono_Unidad9.png" />
-    <BundleResource Include="Resources\logoApp.png" />
+    <BundleResource Include="Resources\logoAppMate.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\icon.png">

@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] primerEjercicio =
         {
             //1:R = C. Principal
-            "1. En la fórmula I =  Prt para interés simple, P representa: ",
+            "1. En la fórmula I =  Prt para interés simple, P representa :",
 
             "A. Cantidad de interés",
             "B. Tasa de interés",
@@ -23,7 +23,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] segundoEjercicio =
         {
               //2:R = B. Identificar la variable
-            "2. Para  modelar una ecuación  el primer paso es:",
+            "2. Para  modelar una ecuación  el primer paso es :",
 
             "A. Transformar las palabras en álgebra",
             "B. *Identificar la variable",
@@ -33,7 +33,8 @@ namespace MiResidencia20.Views.Ejercicios
         string[] tercerEjercicio =
         {
             //3:R = A. C = x/V
-            "3. Para modelar un problema de mezclas y concentraciones la C de sustacia está dada por:",
+            "3. Para modelar un problema de mezclas y concentraciones " +
+                "la C de sustacia está dada por :",
 
             "A. *C = x/V",
             "B.  C= V/x",
@@ -44,7 +45,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] cuartoEjercicio =
         {
             //4:R = C. Sustancia disolvente 
-            "4. De la pregunta anterior, la x de la forma significa :",
+            "4. De la pregunta anterior, la x de la fórmula significa :",
 
             "A. Volumen de sustancia",
             "B. Concentración de sustancia",
@@ -54,7 +55,8 @@ namespace MiResidencia20.Views.Ejercicios
         string[] quintoEjercicio =
        {
             //5:R = A. distancia =  rapidez x tiempo
-            "5. La formula correcta para resolver problemas de distancia, rapidez y tiempo es:",
+            "5. La formula correcta para resolver problemas de distancia," +
+                "rapidez y tiempo es :",
 
             "A. *distancia =  rapidez x tiempo",
             "B. distancia = rapidez / tiempo",
@@ -102,7 +104,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -131,7 +133,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -161,7 +163,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -189,7 +191,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -220,7 +222,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }

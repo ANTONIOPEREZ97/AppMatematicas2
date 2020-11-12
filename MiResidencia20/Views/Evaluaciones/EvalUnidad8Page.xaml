@@ -4,7 +4,7 @@
              Title="Evaluación">
 
   <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad 8. Logaritmos exponenenciales " Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad 8. Logaritmos Exponenenciales " Style="{StaticResource Lbl_TituloPrincipal}" Padding="20" />
       <ScrollView>
         <StackLayout>
             <StackLayout Orientation="Horizontal">

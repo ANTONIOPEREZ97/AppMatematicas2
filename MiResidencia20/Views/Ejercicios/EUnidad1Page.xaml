@@ -4,14 +4,14 @@
              Title="Ejercicio">
    
 <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad I. Números reales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad I. Números Reales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
             <StackLayout Orientation="Horizontal">
             <!--<Label x:Name="labelContadorPreguntas"   HorizontalOptions="CenterAndExpand" FontAttributes ="Bold" FontSize="15" TextColor="Silver" Text="Preguntas: /5"/>-->
             </StackLayout>
 
-            <Frame BackgroundColor="White" CornerRadius="3" BorderColor="#C4ECE7" HeightRequest="400" HasShadow="True">
+            <Frame  CornerRadius="3" BorderColor="#C4ECE7" HeightRequest="400" HasShadow="True">
                 <StackLayout>
                  <Label x:Name="labelPreguntaDescripcion"
                         Style="{StaticResource Lbl_pregunta}"/>

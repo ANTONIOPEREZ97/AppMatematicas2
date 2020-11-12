@@ -33,7 +33,8 @@ namespace MiResidencia20.Views.Ejercicios
         string[] tercerEjercicio =
         {
             //3:R = B. 2/3
-            "3. Encuentre la pendiente de la recta que pasa por los puntos P(2,1) y Q(8, 5):",
+            "3. Encuentre la pendiente de la recta que pasa por los puntos" +
+                "P(2,1) y Q(8, 5) :",
 
             "A. 5/3",
             "B. *2/3",
@@ -103,7 +104,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -132,7 +133,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -162,7 +163,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -189,7 +190,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -220,7 +221,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }

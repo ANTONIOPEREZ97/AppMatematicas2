@@ -48,7 +48,7 @@ namespace MiResidencia20.Views.Ejercicios
         {
             //4:R = A.Conmutativa
             "4. Propiedad de los números reales que cuando sumamos o multiplicamos dos números, " +
-            "el orden no importa; A+B=B+A, AB=BA:",
+            "el orden no importa; A+B = B+A, AB=BA:",
 
             "A. *Conmutatativa",
             "B. Distributiva",
@@ -59,8 +59,9 @@ namespace MiResidencia20.Views.Ejercicios
         string[] quintoEjercicio =
        {
             //5:R = A. Asociativa
-            "5.Propiedad de los números reales que cuando sumamos o multiplicamos tres números, " +
-            "no importa cuales dos de ellos sumamos o multiplicamos prirmero; (A+B)+C=A+(B+C), (AB)C=A(BC)",
+            "5. Propiedad de los números reales que cuando sumamos o multiplicamos tres números, " +
+                "no importa cuales dos de ellos sumamos o multiplicamos prirmero; " +
+                "(A+B)+C = A+(B+C), (AB)C = A(BC)",
 
             "A. *Asociativa",
             "B. Conmutatativa",
@@ -68,168 +69,8 @@ namespace MiResidencia20.Views.Ejercicios
 
         };
 
-        string[] sextoEjercicio =
-       {
-            //6:R = C. Distributiva
-            "6.Propiedad de los números reales que cuando multiplicamos un número por una suma de dos números" +
-              " obtenemos el mismo resultado si multiplicamos el número por cada uno de los términos" +
-              "y luego sumamos los resultados; A(B+C)=AB+AC,(B+C)A=AB+AC:",
+        #endregion 
 
-            "A. Conmutatativa",
-            "B. Asociativa",
-            "C. *Distributiva"
-        };
-
-
-
-        //Ejercicio Avanzado 7/10 | Frame.BorderColor="#F99F8A "
-
-        string[] septimoEjercicio =
-        {
-            //7:R = A. Verdadero
-            "7.Verficar si  la desigualdad es verdadero o falsa 8 < 9 : ",
-            "A. *Verdadero",
-            "B. Falso"
-        };
-
-        string[] octavoEjercicio =
-        {
-            //8:R = B. Falso 
-            "8.Verficar si  la desigualdad es verdadero o falsa  √2 > 1.41:",
-            "A. Verdadero",
-            "B. *Falso"
-        };
-
-        string[] novenoEjercicio =
-        {
-            //9:R = B. Falso
-            "9.Verficar si  la desigualdad es verdadero o falsa -1/2 < -1 : ",
-            "A. Verdadero",
-            "B. *Falso"
-        };
-
-        string[] decimoEjercicio =
-        {
-            //10:R = A. Verdadero
-            "10.Verficar si  la desigualdad es verdadero o falsa -π > -3:",
-            "A. *Verdadero",
-            "B. Falso"
-        };
-
-        #endregion
-
-        #region ComplementsExcercise
-        /*
-                case 6:  //6:R = C. Distributiva
-
-                    labelPreguntaDescripcion.Text = sextoEjercicio[0];
-                    labelRespuestaA.Text = sextoEjercicio[1];
-                    labelRespuestaB.Text = sextoEjercicio[2];
-                    labelRespuestaC.Text = sextoEjercicio[3];
-
-                    if (checkC.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                    }
-                    break;
-
-
-
-                case 7: //7:R = A. Verdadero
-
-                    labelPreguntaDescripcion.Text = septimoEjercicio[0];
-                    labelRespuestaA.Text = septimoEjercicio[1];
-                    labelRespuestaB.Text = septimoEjercicio[2];
-
-                    //1.Nueva implementación: Deshabilito checkC y labelRespuestaC ya que no los uso
-                    //checkC.IsVisible = false;
-                    //labelRespuestaC.IsVisible = false;
-
-                    if (checkA.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                    }
-                    break;
-
-                case 8: //8:R = B. Falso 
-
-                    labelPreguntaDescripcion.Text = octavoEjercicio[0];
-                    labelRespuestaA.Text = octavoEjercicio[1];
-                    labelRespuestaB.Text = octavoEjercicio[2];
-
-                    //checkC.IsVisible = false;
-                    //labelRespuestaC.IsVisible = false;
-
-                    if (checkB.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                    }
-                    break;
-
-                case 9: //9:R = B. Falso
-
-                    labelPreguntaDescripcion.Text = novenoEjercicio[0];
-                    labelRespuestaA.Text = novenoEjercicio[1];
-                    labelRespuestaB.Text = novenoEjercicio[2];
-
-                    //checkC.IsVisible = false;
-                    //labelRespuestaC.IsVisible = false;
-
-                    if (checkB.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                    }
-                    break;
-
-                case 10:  //10:R = A. Verdadero
-
-                    labelPreguntaDescripcion.Text = decimoEjercicio[0];
-                    labelRespuestaA.Text = decimoEjercicio[1];
-                    labelRespuestaB.Text = decimoEjercicio[2];
-
-                    //checkC.IsVisible = false;
-                    //labelRespuestaC.IsVisible = false;
-
-                    if (checkA.IsChecked == true)
-                    {
-                        contadorACiertoCorrecto += 1;
-                        DisplayAlert("Acierto", $"Correcta", "Ok");
-                        //Nueva implementación 
-                        DisplayAlert("Califición", $"{contadorACiertoCorrecto}%", "Ok");
-                    }
-                    else
-                    {
-                        contadorACiertoCorrecto += 0;
-                        DisplayAlert("Respuesta", $"Incorecta", "Ok");
-                        DisplayAlert("Califición", $"{contadorACiertoCorrecto}%","Ok");
-                    }
-                    break;
-                    */
-        #endregion
 
         public EUnidad1Page()
         {
@@ -272,7 +113,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -300,7 +141,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -329,7 +170,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -355,7 +196,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -382,7 +223,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;
@@ -424,4 +265,3 @@ namespace MiResidencia20.Views.Ejercicios
 
 }
     
-

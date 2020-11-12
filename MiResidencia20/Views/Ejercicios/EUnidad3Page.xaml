@@ -4,7 +4,7 @@
              Title="Ejercicio">
 
   <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad 3. Expresiones algebraicas" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad 3. Expresiones Algebraicas" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
 

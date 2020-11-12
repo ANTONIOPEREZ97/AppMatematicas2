@@ -33,7 +33,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] terceraPregunta =
         {
             //3:R = B.(x + 3)²
-            "3. Factorice la ecuación x² + 6x + 9: ",
+            "3. Factorice la ecuación x² + 6x + 9 :",
 
             "A. (x - 3)²",
             "B. *(x + 3)²",
@@ -43,7 +43,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] cuartaPregunta =
         {
             //4:R = A. *y³ + 6y² + 12y + 8
-            "4. Multiplique la expresión algebraica (y + 2)³:",
+            "4. Multiplique la expresión algebraica (y + 2)³ :",
 
             "A. *y³ + 6y² + 12y + 8 ",
             "B. y³ + 6y² + 12y + 8",
@@ -54,7 +54,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] quintaPregunta =
         {
             //5:R = A. Dominio x ≥ -3
-            "5.Encuentra el dominio de la expresión  √x + 3  ",
+            "5. Encuentra el dominio de la expresión  √x + 3 : ",
 
             "A. *Dominio x ≥ -3",
             "B. Dominio x ≤ -3",
@@ -102,7 +102,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -130,7 +130,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -159,7 +159,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -185,7 +185,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -212,7 +212,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;

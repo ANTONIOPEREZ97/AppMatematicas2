@@ -181,7 +181,7 @@
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>
-    <AndroidResource Include="Resources\drawable\logoApp.png">
+    <AndroidResource Include="Resources\drawable\logoAppMate.png">
       <SubType></SubType>
       <Generator></Generator>
     </AndroidResource>

@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] primerEjercicio =
         {
               //1:R = A.Verdadero
-            "1. Sumar el mismo número a cada lado de una ecuación siempre da una ecuación equivalente:",
+            "1. Sumar el mismo número a cada lado de una ecuación siempre da una ecuación equivalente :",
 
             "A. *Verdadero",
             "B. Falso",
@@ -23,7 +23,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] segundoEjercicio =
         {
               //2:R = A.Verdadero
-            "2. Multiplicar cada lado de una ecuación por el mismo número siempre da una ecuación equivalente:",
+            "2. Multiplicar cada lado de una ecuación por el mismo número siempre da una ecuación equivalente :",
 
             "A. *Verdadero",
             "B. Falso",
@@ -34,7 +34,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] tercerEjercicio =
         {
             //3:R = A. Verdadero
-            "3. Elevar al cuadrado cada lado de una ecuación siempre da una ecuación equivalente: ",
+            "3. Elevar al cuadrado cada lado de una ecuación siempre da una ecuación equivalente :",
 
             "A. *Verdadero",
             "B. Falso",
@@ -46,10 +46,10 @@ namespace MiResidencia20.Views.Ejercicios
         string[] cuartoEjercicio =
         {
             //4:R = B. Ecuación cuadrática
-            "4. La ecuación  ax² + bx + c = 0 tiene la forma de una: ",
+            "4. La ecuación  ax² + bx + c = 0 tiene la forma de una :",
 
             "A. Ecuación no lineal",
-            "B. Ecuación  cuadrática",
+            "B. *Ecuación  cuadrática",
             "C. Ecuación lineal"
         };
 
@@ -103,7 +103,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -129,7 +129,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -157,7 +157,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -184,7 +184,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -211,7 +211,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 

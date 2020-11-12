@@ -34,7 +34,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] terceraPregunta =
         {
             //3:R = A. 1
-            "3. Simplifique la  expresión trigonométrica  sen x sec x / tan x: ",
+            "3. Simplifique la  expresión trigonométrica  sen x sec x / tan x : ",
 
             "A. *1",
             "B. 0",
@@ -101,7 +101,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -129,7 +129,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -158,7 +158,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -211,7 +211,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;

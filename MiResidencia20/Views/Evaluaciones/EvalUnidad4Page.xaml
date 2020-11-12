@@ -5,7 +5,7 @@
              Title="Evaluación">
 
    <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad 4. Expresiones racionales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad 4. Expresiones Racionales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
             <StackLayout Orientation="Horizontal">

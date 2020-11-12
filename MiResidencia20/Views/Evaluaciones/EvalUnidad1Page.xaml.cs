@@ -15,7 +15,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //1:R = C. Distributiva
             "1.Propiedad de los números reales que cuando multiplicamos un número por una suma de dos números" +
               " obtenemos el mismo resultado si multiplicamos el número por cada uno de los términos" +
-              "y luego sumamos los resultados; A(B+C)=AB+AC,(B+C)A=AB+AC:",
+              "y luego sumamos los resultados; A(B+C)= AB+AC, (B+C)A= AB+AC :",
 
             "A. Conmutatativa",
             "B. Asociativa",
@@ -26,7 +26,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] segundaPregunta =
         {
             //2:R = C. Irracional
-            "2. ¿Qué clase de número es π?: ",
+            "2. ¿Qué clase de número es π? :",
             "A. Natural",
             "B. Racional",
             "C. *Irracional"
@@ -35,7 +35,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] terceraPregunta =
         {
             //3:R = B. Falso 
-            "3. Verficar si  la desigualdad es verdadero o falsa  √2 > 1.41:",
+            "3. Verficar si  la desigualdad es verdadero o falsa  √2 > 1.41 :",
             "A. Verdadero",
             "B. *Falso",
             "C. Ninguno de los anteriores"
@@ -44,7 +44,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] cuartaPregunta =
         {
             //4:R = B. Racional
-            "4.¿Qué clase de número es -4/2?: ",
+            "4. ¿Qué clase de número es -4/2?: ",
             "A. Natural",
             "B. *Racional",
             "C. Irracional"
@@ -54,7 +54,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] quintaPregunta =
         {
             //5:R = A. Verdadero
-            "5.Verficar si  la desigualdad es verdadero o falsa -π > -3:",
+            "5. Verficar si  la desigualdad es verdadero o falsa -π > -3 :",
             "A. *Verdadero",
             "B. Falso",
             "C. Ninguno de los anteriores"
@@ -102,7 +102,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -130,7 +130,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -159,7 +159,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -185,7 +185,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -212,7 +212,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;

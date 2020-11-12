@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] primeraPregunta =
        {
             //1:R = B. 3
-            "1. Una recta tiene la ecuación  y = 3x + 2, cuál es la pendiente :",
+            "1. Una recta tiene la ecuación   y = 3x + 2, cuál es la pendiente :",
 
             "A. 6",
             "B. *3 ",
@@ -56,7 +56,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] quintaPregunta =
         {
             //5:R = A. x  = 2
-            "5.	La ecuación de la recta vertical que pasa por (2, 3) es: ",
+            "5. La ecuación de la recta vertical que pasa por (2, 3) es : ",
 
             "A. *x = 2",
             "B. x = 1/2",
@@ -104,7 +104,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -132,7 +132,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -161,7 +161,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -187,7 +187,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -214,7 +214,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;

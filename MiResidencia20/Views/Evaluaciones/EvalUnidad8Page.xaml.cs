@@ -23,7 +23,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
         string[] segundaPregunta =
         {
-            //2:R = A. eˆx
+            //2:R = A. eˆx  
             "2. Exprese la ecuación ln  5 = x en forma exponencial :",
 
             "A. *eˆx =  5 ",
@@ -44,7 +44,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] cuartaPregunta =
         {
             //4:R = C. 1/2   
-            "4. Evaluar el la expresión logaritmica log10 √10: ",
+            "4. Evaluar el la expresión logaritmica log10 √10 : ",
 
             "A. 3/2",
             "B. 5/2",
@@ -102,7 +102,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -130,7 +130,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -159,7 +159,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -185,7 +185,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -212,7 +212,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;

@@ -5,7 +5,7 @@
 
 
     <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad 6. Modelado con ecuaciones " Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad 6. Modelado con Ecuaciones " Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
 

@@ -4,12 +4,14 @@
              x:Class="MiResidencia20.Views.Logueo.IniciarSesionPage">
 
     <ScrollView>
-        <StackLayout Margin="10,70">
+        
+        <StackLayout Margin="10,150">
+          
             <Label Text="¡Hola de nuevo!" TextColor="Black" HorizontalOptions="CenterAndExpand"
                    FontSize="20"/>
 
             <Label Text="Inicia sesión con tu nombre de usuario para empezar..."
-                   TextColor="Black" HorizontalOptions="StartAndExpand"  FontAttributes="None"/>
+                   TextColor="#51555E" HorizontalOptions="StartAndExpand"  FontAttributes="None"/>
 
             <StackLayout Margin="10,60">
                 

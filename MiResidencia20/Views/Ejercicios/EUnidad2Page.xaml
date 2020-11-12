@@ -4,7 +4,7 @@
              Title="Ejercicio">
 
     <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad 2. Exponentes y radicales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad 2. Exponentes y Radicales" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
 

@@ -23,7 +23,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] segundoEjercicio =
         {
               //2:R = A  √3/2
-            "2. Evaluar la expresión   sen π/6 + cos π/6 :",
+            "2. Evaluar la expresión sen π/6 + cos π/6 :",
 
             "A. *√3/2",
             "B.  1",
@@ -33,7 +33,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] tercerEjercicio =
         {
             //3:R = B. 1/2
-            "3. Evaluar la expresión    (cos 30˚)²  - (sen 30˚)²",
+            "3. Evaluar la expresión (cos 30˚)²-(sen 30˚)²",
 
             "A. 1/5 ",
             "B. *1/2",
@@ -54,7 +54,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] quintoEjercicio =
        {
             //5:R = B. csc u
-            "5. La expresión trigonométrica sen u +  cot u cos u   es: : ",
+            "5. La expresión trigonométrica sen u + cot u cos u es :",
 
             "A. tan u ",
             "B. *csc u",
@@ -101,7 +101,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -130,7 +130,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -160,7 +160,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -187,7 +187,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -218,7 +218,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }

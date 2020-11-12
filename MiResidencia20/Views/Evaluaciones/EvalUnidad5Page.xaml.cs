@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] primeraPregunta =
        {
             //1:R = A. x = -3
-            "1. Resuelva la ecuación 7x – 4 = 3x + 8 :",
+            "1. Resuelva la ecuación 7x–4 = 3x+8 :",
 
             "A. *x = -3",
             "B. x = 3",
@@ -24,7 +24,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] segundaPregunta =
         {
             //2:R = C. x = 3  y x = - 8"
-            "2.	Resuelva la ecuación x2 + 5x = 24 :",
+            "2.	Resuelva la ecuación x² + 5x = 24 :",
 
             "A. x = 3 ",
             "B. x = -8",
@@ -44,7 +44,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] cuartaPregunta =
         {
             //4:R = B. Dos soluciones
-            "4. Use el discriminante para determinar cuantas soluciones " +
+            "4. Use el discriminante para determinar cuántas soluciones " +
                 "tiene la ecuación 4x2 - 12x + 9 = 0 :",
 
             "A. Una solución",
@@ -56,7 +56,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] quintaPregunta =
         {
             //5:R = Indefinido
-            "5. Resuelve el siguiente valor absoluto  |x – 6| = -1: ",
+            "5. Resuelve el siguiente valor absoluto  |x – 6| = -1 : ",
 
             "A. x = -7",
             "B. x= 3  y x = 5",
@@ -103,7 +103,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -131,7 +131,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -160,7 +160,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -186,7 +186,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -213,7 +213,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;

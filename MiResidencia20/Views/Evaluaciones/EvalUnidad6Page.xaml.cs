@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] primeraPregunta =
        {
             //1:R = A. 3/4 s
-            "1. Expresar en variable*. La distancia (en millas) que un auto recorre en 45 min;" +
+            "1. Expresar en variable*. La distancia (en millas) que un auto recorre en 45 min; " +
                 "s= rapidez del auto (en mi/h) :",
 
             "A. *3/4 s",
@@ -25,7 +25,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] segundaPregunta =
         {
             //2:R = A. 3n + 3
-            "2. Expresar en variable*. La suma de los tres enteros consecutivos;" +
+            "2. Expresar en variable*. La suma de los tres enteros consecutivos; " +
                 "n = primer  entero de los tres :",
 
             "A. *3n + 3 ",
@@ -47,7 +47,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] cuartaPregunta =
         {
             //4:R = C. l w
-            "4. Formula para el área de la figura geométrica,  un rectángulo de longitud l y ancho w :",
+            "4. Fórmula para el área de la figura geométrica,  un rectángulo de longitud l y ancho w :",
 
             "A. 4(l w)",
             "B. l w²",
@@ -106,7 +106,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -134,7 +134,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -163,7 +163,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     //PREGUNTA 4
@@ -189,7 +189,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -216,7 +216,7 @@ namespace MiResidencia20.Views.Evaluaciones
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
                     break;

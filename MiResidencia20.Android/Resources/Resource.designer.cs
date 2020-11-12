@@ -5808,7 +5808,7 @@ namespace MiResidencia20.Droid
 			public const int ic_mtrl_chip_close_circle = 2131165284;
 			
 			// aapt resource value: 0x7F07007D
-			public const int logoApp = 2131165309;
+			public const int logoAppMate = 2131165309;
 			
 			// aapt resource value: 0x7F07007B
 			public const int logo_ITTG = 2131165307;

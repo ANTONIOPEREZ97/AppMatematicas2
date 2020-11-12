@@ -3,7 +3,7 @@
              x:Class="MiResidencia20.Views.Evaluaciones.EvalUnidad3Page"
              Title="Evaluación">
     <StackLayout Margin="5" BackgroundColor="White">
-    <Label Text="Unidad 3. Expresiones algebraicas" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
+    <Label Text="Unidad 3. Expresiones Algebraicas" Style="{StaticResource Lbl_TituloPrincipal}" Padding="20"/>
       <ScrollView>
         <StackLayout>
             <StackLayout Orientation="Horizontal">

@@ -14,7 +14,8 @@ namespace MiResidencia20.Views.Ejercicios
         string[] primerEjercicio =
         {
               //1:R = C. Ecuación equivalente
-            "1. Dos ecuaciones con exactamente las mismas soluciones reciben el nombre de:",
+            "1. Dos ecuaciones que tienen exactamente las mismas soluciones" +
+                " reciben el nombre de :",
 
             "A. Ecuación lineal ",
             "B. Ecuación cuadrática",
@@ -24,7 +25,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] segundoEjercicio =
         {
               //2:R = A. ax + b = 0
-            "2. Una ecuación lineal tiene la forma de:",
+            "2. Una ecuación lineal tiene la forma de :",
 
             "A. *ax + b = 0",
             "B. A + B = B + C",
@@ -34,7 +35,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] tercerEjercicio =
         {
             //3:R = C. Ecuación de primer grado
-            "3. Una ecuación lineal también es conocido como una:",
+            "3. Una ecuación lineal también es conocido como una :",
 
             "A. Ecuación lineal",
             "B. Ecuación cuadrática",
@@ -45,7 +46,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] cuartoEjercicio =
         {
             //4:R = C.4X – 5 =  3
-            "4. Cuál de las ecuaciones es una ecuación lineal:",
+            "4. Cuál de las ecuaciones es una ecuación lineal :",
 
             "A. x² + 2x = 8",
             "B. ax² + bx + c = 0  ",
@@ -55,7 +56,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] quintoEjercicio =
        {
             //5:R = B. x = 1
-            "5. La solución de la ecuación 5x – 5 = 2x -2 es: ",
+            "5. La solución de la ecuación 5x–5 = 2x-2 es : ",
 
             "A. x = 2",
             "B. *x = 1",
@@ -103,7 +104,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -132,7 +133,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkB.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -162,7 +163,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -190,7 +191,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }
@@ -221,7 +222,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
 
                         }
                     }

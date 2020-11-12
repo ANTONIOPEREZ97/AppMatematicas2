@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] primerEjercicio =
         {
               //1:R = B.Grado 2
-            "1. De que grado es el polinomio  2x² -  3x + 4:",
+            "1. De que grado es el polinomio 2x²-3x+4 :",
 
             "A. Grado 3",
             "B. *Grado 2",
@@ -23,7 +23,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] segundoEjercicio =
         {
               //2:R = C.Trinomio 
-            "2. Qué tipo de polinomio es la siguiente expresión 2x² -  3x + 4 :",
+            "2. Qué tipo de polinomio es la siguiente expresión 2x²-3x + 4 :",
 
             "A. Binomio",
             "B. Monomio",
@@ -34,7 +34,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] tercerEjercicio =
         {
             //3:R = B. Monomio
-            "3. Qué tipo de polinomio es la siguiente expresión 9x¹²",
+            "3. Qué tipo de polinomio es la siguiente expresión 9x¹² :",
 
             "A. Doceavo término",
             "B. *Monomio",
@@ -105,7 +105,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -131,7 +131,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -159,7 +159,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkC.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
@@ -186,7 +186,7 @@ namespace MiResidencia20.Views.Ejercicios
                              checkA.IsChecked == true || checkB.IsChecked == true)
                         {
                             contadorACiertoCorrecto += 0;//1. Le sumo 0 pts
-                            DisplayAlert("Respuesta", $"Incorecta", "Ok"); //4.Imprimo mensaje incorrecta
+                            DisplayAlert("Respuesta", $"Incorrecta", "Ok"); //4.Imprimo mensaje incorrecta
                         }
                     }
 
