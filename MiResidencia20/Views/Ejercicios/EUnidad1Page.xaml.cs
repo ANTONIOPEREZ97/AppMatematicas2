@@ -61,7 +61,7 @@ namespace MiResidencia20.Views.Ejercicios
             //5:R = A. Asociativa
             "5. Propiedad de los números reales que cuando sumamos o multiplicamos tres números, " +
                 "no importa cuales dos de ellos sumamos o multiplicamos prirmero; " +
-                "(A+B)+C = A+(B+C), (AB)C = A(BC)",
+                "(A+B)+C = A+(B+C), (AB)C = A(BC):",
 
             "A. *Asociativa",
             "B. Conmutatativa",
@@ -233,13 +233,13 @@ namespace MiResidencia20.Views.Ejercicios
 
                     if (calificacionPorcentaje >= 80)
                     {
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Felicitaciones sigue así!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Nunca dejes de aprender!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
                         Navigation.PopAsync();
                     }
                     break;

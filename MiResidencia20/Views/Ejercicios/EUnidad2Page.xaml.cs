@@ -225,13 +225,13 @@ namespace MiResidencia20.Views.Ejercicios
 
                     if (calificacionPorcentaje >= 80)
                     {
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Felicitaciones sigue así!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Nunca dejes de aprender!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
                         Navigation.PopAsync();
                     }
                     break;

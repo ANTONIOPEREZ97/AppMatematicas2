@@ -44,18 +44,18 @@
             </Style>
 
 
-             <!-- Vista de Porcentaje de Evaluación-->
-             <!-- 5.Labels Cabeceras VerPorcentajes-->
+             <!-- 5. Vista de Porcentaje de Evaluación-->
+             <!-- 5.1 Labels Cabeceras VerPorcentajes-->
             <Style TargetType="Label" x:Key="Lbl_Cabecera">
               <Setter Property="VerticalTextAlignment"  Value="Center"></Setter>
               <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
-              <Setter Property="TextColor" Value="#FFFF66"></Setter>
-              <Setter Property="BackgroundColor" Value="#1E4D7E"></Setter>
+              <Setter Property="TextColor" Value="White"></Setter>
+              <Setter Property="BackgroundColor" Value="#002859"></Setter>
               <Setter Property="FontAttributes" Value="Bold"></Setter>
-              <Setter Property="FontSize" Value="10"></Setter> 
+              <Setter Property="FontSize" Value="11"></Setter> 
             </Style>
 
-             <!-- 5.1 Labels  Unidades VerPorcentajes-->
+             <!-- 5.2 Labels  Unidades VerPorcentajes-->
             <Style TargetType="Label" x:Key="Lbl_Unidad">
               <Setter Property="VerticalTextAlignment" Value="Center"></Setter>
               <Setter Property="HorizontalTextAlignment" Value="Center"></Setter>
@@ -101,7 +101,7 @@
               <Setter Property="Margin" Value="20,0"/>
               <Setter Property="FontSize" Value="15"/>
               <Setter Property="FontAttributes" Value="Bold"/> 
-              <Setter Property="BackgroundColor" Value="#F5F5F5"/>
+              <!--<Setter Property="BackgroundColor" Value="#F5F5F5"/>-->
             </Style>
 
 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace MiResidencia20.Views.Evaluaciones
@@ -223,13 +222,13 @@ namespace MiResidencia20.Views.Evaluaciones
 
                     if (calificacionPorcentaje >= 80)
                     {
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Felicitaciones!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Nunca dejes de aprender!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
                         Navigation.PopAsync();
                     }
                     break;

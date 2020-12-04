@@ -28,6 +28,7 @@
     <Folder Include="Imagenes\Teoria\" />
     <Folder Include="Data\" />
     <Folder Include="Views\About\" />
+    <Folder Include="Views\Videos\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Data\InfoMasterDetailPage.xaml.cs" />

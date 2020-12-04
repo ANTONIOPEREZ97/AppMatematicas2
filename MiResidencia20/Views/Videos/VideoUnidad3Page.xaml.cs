@@ -3,11 +3,11 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 
-namespace MiResidencia20.Views.Menu
+namespace MiResidencia20.Views.Videos
 {
-    public partial class JuegosPage : ContentPage
+    public partial class VideoUnidad3Page : ContentPage
     {
-        public JuegosPage()
+        public VideoUnidad3Page()
         {
             InitializeComponent();
         }

@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Evaluaciones
         string[] primeraPregunta =
        {
             //1:R = B. 3
-            "1. Una recta tiene la ecuación   y = 3x + 2, cuál es la pendiente :",
+            "1. Una recta tiene la ecuación y = 3x + 2, cuál es la pendiente :",
 
             "A. 6",
             "B. *3 ",
@@ -224,13 +224,13 @@ namespace MiResidencia20.Views.Evaluaciones
 
                     if (calificacionPorcentaje >= 80)
                     {
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Felicitaciones!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
-                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , Nunca dejes de aprender!", "Ok");
+                        DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
                         Navigation.PopAsync();
                     }
                     break;

@@ -11,7 +11,7 @@
             <!--<Label x:Name="labelContadorPreguntas"   HorizontalOptions="CenterAndExpand" FontAttributes ="Bold" FontSize="15" TextColor="Silver" Text="Preguntas: /5"/>-->
             </StackLayout>
 
-            <Frame BackgroundColor="White" CornerRadius="3" BorderColor="#C4ECE7" HeightRequest="400" HasShadow="True">
+            <Frame  CornerRadius="3" BackgroundColor="#ECEFF1" HeightRequest="350" HasShadow="True">
                 <StackLayout>
                  <Label x:Name="labelPreguntaDescripcion"
                         Style="{StaticResource Lbl_pregunta}"/>
@@ -28,9 +28,9 @@
                                <ColumnDefinition Width="12*"/>
                             </Grid.ColumnDefinitions>
                       
-                         <CheckBox Grid.Column="0" Grid.Row="0" x:Name="checkA"/>  <Label  x:Name="labelRespuestaA"   Grid.Column="1" Grid.Row="0"  Style="{StaticResource Lbl_respuestaOpciones}"/>
-                         <CheckBox Grid.Column="0" Grid.Row="1" x:Name="checkB"/> <Label  x:Name="labelRespuestaB"   Grid.Column="1" Grid.Row="1"   Style="{StaticResource Lbl_respuestaOpciones}"/>
-                         <CheckBox Grid.Column="0" Grid.Row="2" x:Name="checkC"/>  <Label  x:Name="labelRespuestaC"   Grid.Column="1" Grid.Row="2"     Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="0" x:Name="checkA"/>  <Label  x:Name="labelRespuestaA"   Grid.Column="1" Grid.Row="0"   Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="1" x:Name="checkB"/> <Label   x:Name="labelRespuestaB"   Grid.Column="1" Grid.Row="1"   Style="{StaticResource Lbl_respuestaOpciones}"/>
+                         <CheckBox Grid.Column="0" Grid.Row="2" x:Name="checkC"/>  <Label  x:Name="labelRespuestaC"   Grid.Column="1" Grid.Row="2"   Style="{StaticResource Lbl_respuestaOpciones}"/>
                        </Grid>
                     </StackLayout>
                 </StackLayout>

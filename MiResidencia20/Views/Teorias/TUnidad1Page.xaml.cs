@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using MiResidencia20.Views.Ejercicios;
+using MiResidencia20.Views.Videos;
 using Xamarin.Forms;
 
 
@@ -21,9 +22,12 @@ namespace MiResidencia20.Views.Teorias
 
          public void Btn_irAVideoTuturial(System.Object sender, System.EventArgs e)
         {
-            var anchura = 600;
-            WebView.HeightRequest = anchura; 
-            var meWebUnidad1 = WebView.Source;
+             //1.Navego VideoU1
+            Navigation.PushAsync(new VideoUnidad1Page());
+
+            //var anchura = 600;
+            //WebView.HeightRequest = anchura; 
+            //var meWebUnidad1 = WebView.Source;
         }
 
         
