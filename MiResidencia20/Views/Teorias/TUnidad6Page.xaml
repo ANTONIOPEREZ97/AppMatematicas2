@@ -11,16 +11,16 @@
                   <StackLayout>
                       <!-- Construcción del modelado-->
                       <Label Text="6.1. Construcción del modelado" Style="{StaticResource Lbl_Subtitulos}" Margin="0" Padding="0"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau6_img1.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau6_img2.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau6_img3.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau6_img4.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau6_img1.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau6_img2.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau6_img3.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau6_img4.png" Aspect="AspectFill"></Image>
                       
                       <!-- Usos de modelos-->
                       <Label Text="6.2. Usos de modelos" Style="{StaticResource Lbl_Subtitulos}"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau6_img5.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau6_img6.png}" Aspect="AspectFill"></Image>
-
+                      <Image Source="teoriau6_img5.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau6_img6.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau6_img7.png" Aspect="AspectFill"></Image>
                      <Grid Margin="20,20">
                           <Grid.RowDefinitions>
                             <RowDefinition/>

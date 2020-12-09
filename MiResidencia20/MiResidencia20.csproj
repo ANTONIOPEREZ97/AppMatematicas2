@@ -351,30 +351,6 @@
       <SubType></SubType>
       <Generator></Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img1.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img2.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img3.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img4.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img5.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Imagenes\Teoria\teoriau6_img6.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="Imagenes\Teoria\teoriau7_img1.png">
       <SubType></SubType>
       <Generator></Generator>

@@ -9,19 +9,19 @@
                <Label Text="Unidad 5. Ecuaciones" Style="{StaticResource Lbl_TituloPrincipal}"/>
                 <ScrollView>
                   <StackLayout>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img1.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img1.png" Aspect="AspectFill"></Image>
                       <!-- Ecuaciones lineales-->
                       <Label Text="5.1. Ecuaciones lineales" Style="{StaticResource Lbl_Subtitulos}" Margin="0" Padding="0"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img2.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img3.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img2.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img3.png" Aspect="AspectFill"></Image>
                       
                       <!-- Ecuaciones cuadráticas-->
                       <Label Text="4.2. Ecuaciones cuadráticas" Style="{StaticResource Lbl_Subtitulos}"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img4.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img5.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img6.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img7.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau5_img8.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img4.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img5.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img6.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img7.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau5_img8.png" Aspect="AspectFill"></Image>
 
                       <Grid Margin="20,20">
                           <Grid.RowDefinitions>

@@ -11,25 +11,25 @@
                   <StackLayout>
                        <!-- Pendiente-->
                       <Label Text="7.1 Pendiente" Style="{StaticResource Lbl_Subtitulos}"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img1.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img2.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img1.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img2.png" Aspect="AspectFill"></Image>
 
                       <!-- Ecuación de la recta punto y pendiente-->
                       <Label Text="7.2 Ecuación de la recta punto y pendiente" Style="{StaticResource Lbl_Subtitulos}"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img3.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img4.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img3.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img4.png" Aspect="AspectFill"></Image>
 
                       <!-- Ecuación de la recta con dos puntos-->
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img5.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img6.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img7.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img8.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img5.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img6.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img7.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img8.png" Aspect="AspectFill"></Image>
                       
                       <!-- Recta perpendicular y paralelas-->
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img9.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img10.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img11.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau7_img12.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img9.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img10.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img11.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau7_img12.png" Aspect="AspectFill"></Image>
 
                       <Grid Margin="20,20">
                           <Grid.RowDefinitions>

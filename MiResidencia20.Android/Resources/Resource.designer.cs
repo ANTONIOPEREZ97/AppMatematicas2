@@ -5862,10 +5862,304 @@ namespace MiResidencia20.Droid
 			public const int notify_panel_notification_icon_bg = 2131165324;
 			
 			// aapt resource value: 0x7F07008D
-			public const int tooltip_frame_dark = 2131165325;
+			public const int teoriau1_img1 = 2131165325;
 			
 			// aapt resource value: 0x7F07008E
-			public const int tooltip_frame_light = 2131165326;
+			public const int teoriau1_img2 = 2131165326;
+			
+			// aapt resource value: 0x7F07008F
+			public const int teoriau1_img3 = 2131165327;
+			
+			// aapt resource value: 0x7F070090
+			public const int teoriau1_img4 = 2131165328;
+			
+			// aapt resource value: 0x7F070091
+			public const int teoriau1_img5 = 2131165329;
+			
+			// aapt resource value: 0x7F070092
+			public const int teoriau1_img6 = 2131165330;
+			
+			// aapt resource value: 0x7F070093
+			public const int teoriau1_img7 = 2131165331;
+			
+			// aapt resource value: 0x7F070094
+			public const int teoriau2_img1 = 2131165332;
+			
+			// aapt resource value: 0x7F070095
+			public const int teoriau2_img10 = 2131165333;
+			
+			// aapt resource value: 0x7F070096
+			public const int teoriau2_img11 = 2131165334;
+			
+			// aapt resource value: 0x7F070097
+			public const int teoriau2_img12 = 2131165335;
+			
+			// aapt resource value: 0x7F070098
+			public const int teoriau2_img13 = 2131165336;
+			
+			// aapt resource value: 0x7F070099
+			public const int teoriau2_img14 = 2131165337;
+			
+			// aapt resource value: 0x7F07009A
+			public const int teoriau2_img2 = 2131165338;
+			
+			// aapt resource value: 0x7F07009B
+			public const int teoriau2_img3 = 2131165339;
+			
+			// aapt resource value: 0x7F07009C
+			public const int teoriau2_img4 = 2131165340;
+			
+			// aapt resource value: 0x7F07009D
+			public const int teoriau2_img5 = 2131165341;
+			
+			// aapt resource value: 0x7F07009E
+			public const int teoriau2_img6 = 2131165342;
+			
+			// aapt resource value: 0x7F07009F
+			public const int teoriau2_img7 = 2131165343;
+			
+			// aapt resource value: 0x7F0700A0
+			public const int teoriau2_img8 = 2131165344;
+			
+			// aapt resource value: 0x7F0700A1
+			public const int teoriau2_img9 = 2131165345;
+			
+			// aapt resource value: 0x7F0700A2
+			public const int teoriau3_img1 = 2131165346;
+			
+			// aapt resource value: 0x7F0700A3
+			public const int teoriau3_img10 = 2131165347;
+			
+			// aapt resource value: 0x7F0700A4
+			public const int teoriau3_img11 = 2131165348;
+			
+			// aapt resource value: 0x7F0700A5
+			public const int teoriau3_img12 = 2131165349;
+			
+			// aapt resource value: 0x7F0700A6
+			public const int teoriau3_img13 = 2131165350;
+			
+			// aapt resource value: 0x7F0700A7
+			public const int teoriau3_img14 = 2131165351;
+			
+			// aapt resource value: 0x7F0700A8
+			public const int teoriau3_img15 = 2131165352;
+			
+			// aapt resource value: 0x7F0700A9
+			public const int teoriau3_img2 = 2131165353;
+			
+			// aapt resource value: 0x7F0700AA
+			public const int teoriau3_img3 = 2131165354;
+			
+			// aapt resource value: 0x7F0700AB
+			public const int teoriau3_img4 = 2131165355;
+			
+			// aapt resource value: 0x7F0700AC
+			public const int teoriau3_img5 = 2131165356;
+			
+			// aapt resource value: 0x7F0700AD
+			public const int teoriau3_img6 = 2131165357;
+			
+			// aapt resource value: 0x7F0700AE
+			public const int teoriau3_img7 = 2131165358;
+			
+			// aapt resource value: 0x7F0700AF
+			public const int teoriau3_img8 = 2131165359;
+			
+			// aapt resource value: 0x7F0700B0
+			public const int teoriau3_img9 = 2131165360;
+			
+			// aapt resource value: 0x7F0700B1
+			public const int teoriau4_img1 = 2131165361;
+			
+			// aapt resource value: 0x7F0700B2
+			public const int teoriau4_img10 = 2131165362;
+			
+			// aapt resource value: 0x7F0700B3
+			public const int teoriau4_img11 = 2131165363;
+			
+			// aapt resource value: 0x7F0700B4
+			public const int teoriau4_img12 = 2131165364;
+			
+			// aapt resource value: 0x7F0700B5
+			public const int teoriau4_img2 = 2131165365;
+			
+			// aapt resource value: 0x7F0700B6
+			public const int teoriau4_img3 = 2131165366;
+			
+			// aapt resource value: 0x7F0700B7
+			public const int teoriau4_img4 = 2131165367;
+			
+			// aapt resource value: 0x7F0700B8
+			public const int teoriau4_img5 = 2131165368;
+			
+			// aapt resource value: 0x7F0700B9
+			public const int teoriau4_img6 = 2131165369;
+			
+			// aapt resource value: 0x7F0700BA
+			public const int teoriau4_img7 = 2131165370;
+			
+			// aapt resource value: 0x7F0700BB
+			public const int teoriau4_img8 = 2131165371;
+			
+			// aapt resource value: 0x7F0700BC
+			public const int teoriau4_img9 = 2131165372;
+			
+			// aapt resource value: 0x7F0700BD
+			public const int teoriau5_img1 = 2131165373;
+			
+			// aapt resource value: 0x7F0700BE
+			public const int teoriau5_img2 = 2131165374;
+			
+			// aapt resource value: 0x7F0700BF
+			public const int teoriau5_img3 = 2131165375;
+			
+			// aapt resource value: 0x7F0700C0
+			public const int teoriau5_img4 = 2131165376;
+			
+			// aapt resource value: 0x7F0700C1
+			public const int teoriau5_img5 = 2131165377;
+			
+			// aapt resource value: 0x7F0700C2
+			public const int teoriau5_img6 = 2131165378;
+			
+			// aapt resource value: 0x7F0700C3
+			public const int teoriau5_img7 = 2131165379;
+			
+			// aapt resource value: 0x7F0700C4
+			public const int teoriau5_img8 = 2131165380;
+			
+			// aapt resource value: 0x7F0700C5
+			public const int teoriau6_img1 = 2131165381;
+			
+			// aapt resource value: 0x7F0700C6
+			public const int teoriau6_img2 = 2131165382;
+			
+			// aapt resource value: 0x7F0700C7
+			public const int teoriau6_img3 = 2131165383;
+			
+			// aapt resource value: 0x7F0700C8
+			public const int teoriau6_img4 = 2131165384;
+			
+			// aapt resource value: 0x7F0700C9
+			public const int teoriau6_img5 = 2131165385;
+			
+			// aapt resource value: 0x7F0700CA
+			public const int teoriau6_img6 = 2131165386;
+			
+			// aapt resource value: 0x7F0700CB
+			public const int teoriau6_img7 = 2131165387;
+			
+			// aapt resource value: 0x7F0700CC
+			public const int teoriau7_img1 = 2131165388;
+			
+			// aapt resource value: 0x7F0700CD
+			public const int teoriau7_img10 = 2131165389;
+			
+			// aapt resource value: 0x7F0700CE
+			public const int teoriau7_img11 = 2131165390;
+			
+			// aapt resource value: 0x7F0700CF
+			public const int teoriau7_img12 = 2131165391;
+			
+			// aapt resource value: 0x7F0700D0
+			public const int teoriau7_img2 = 2131165392;
+			
+			// aapt resource value: 0x7F0700D1
+			public const int teoriau7_img3 = 2131165393;
+			
+			// aapt resource value: 0x7F0700D2
+			public const int teoriau7_img4 = 2131165394;
+			
+			// aapt resource value: 0x7F0700D3
+			public const int teoriau7_img5 = 2131165395;
+			
+			// aapt resource value: 0x7F0700D4
+			public const int teoriau7_img6 = 2131165396;
+			
+			// aapt resource value: 0x7F0700D5
+			public const int teoriau7_img7 = 2131165397;
+			
+			// aapt resource value: 0x7F0700D6
+			public const int teoriau7_img8 = 2131165398;
+			
+			// aapt resource value: 0x7F0700D7
+			public const int teoriau7_img9 = 2131165399;
+			
+			// aapt resource value: 0x7F0700D8
+			public const int teoriau8_img1 = 2131165400;
+			
+			// aapt resource value: 0x7F0700D9
+			public const int teoriau8_img10 = 2131165401;
+			
+			// aapt resource value: 0x7F0700DA
+			public const int teoriau8_img11 = 2131165402;
+			
+			// aapt resource value: 0x7F0700DB
+			public const int teoriau8_img12 = 2131165403;
+			
+			// aapt resource value: 0x7F0700DC
+			public const int teoriau8_img13 = 2131165404;
+			
+			// aapt resource value: 0x7F0700DD
+			public const int teoriau8_img14 = 2131165405;
+			
+			// aapt resource value: 0x7F0700DE
+			public const int teoriau8_img15 = 2131165406;
+			
+			// aapt resource value: 0x7F0700DF
+			public const int teoriau8_img2 = 2131165407;
+			
+			// aapt resource value: 0x7F0700E0
+			public const int teoriau8_img3 = 2131165408;
+			
+			// aapt resource value: 0x7F0700E1
+			public const int teoriau8_img4 = 2131165409;
+			
+			// aapt resource value: 0x7F0700E2
+			public const int teoriau8_img5 = 2131165410;
+			
+			// aapt resource value: 0x7F0700E3
+			public const int teoriau8_img6 = 2131165411;
+			
+			// aapt resource value: 0x7F0700E4
+			public const int teoriau8_img7 = 2131165412;
+			
+			// aapt resource value: 0x7F0700E5
+			public const int teoriau8_img8 = 2131165413;
+			
+			// aapt resource value: 0x7F0700E6
+			public const int teoriau8_img9 = 2131165414;
+			
+			// aapt resource value: 0x7F0700E7
+			public const int teoriau9_img1 = 2131165415;
+			
+			// aapt resource value: 0x7F0700E8
+			public const int teoriau9_img2 = 2131165416;
+			
+			// aapt resource value: 0x7F0700E9
+			public const int teoriau9_img3 = 2131165417;
+			
+			// aapt resource value: 0x7F0700EA
+			public const int teoriau9_img4 = 2131165418;
+			
+			// aapt resource value: 0x7F0700EB
+			public const int teoriau9_img5 = 2131165419;
+			
+			// aapt resource value: 0x7F0700EC
+			public const int teoriau9_img6 = 2131165420;
+			
+			// aapt resource value: 0x7F0700ED
+			public const int teoriau9_img7 = 2131165421;
+			
+			// aapt resource value: 0x7F0700EE
+			public const int teoriau9_img8 = 2131165422;
+			
+			// aapt resource value: 0x7F0700EF
+			public const int tooltip_frame_dark = 2131165423;
+			
+			// aapt resource value: 0x7F0700F0
+			public const int tooltip_frame_light = 2131165424;
 			
 			static Drawable()
 			{

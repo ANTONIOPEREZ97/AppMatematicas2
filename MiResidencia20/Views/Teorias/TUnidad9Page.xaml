@@ -12,19 +12,19 @@
                   <StackLayout>
                       <!-- Funciones trigonométricas <9.2>-->
                       <Label Text="9.1. Funciones trigonométricas" Style="{StaticResource Lbl_Subtitulos}" Margin="0" Padding="0"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img1.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img2.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img3.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img4.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img1.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img2.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img3.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img4.png" Aspect="AspectFill"></Image>
                       
                       <!-- Identidades trigonométricas-->
                       <Label Text="9.3. Identidades trigonométricas" Style="{StaticResource Lbl_Subtitulos}"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img5.png}" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img6.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img5.png" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img6.png" Aspect="AspectFill"></Image>
 
                       <!-- Ecuaciones trigonométricas básicas-->
                       <Label Text="9.4. Ecuaciones trigonométricas básicas" Style="{StaticResource Lbl_Subtitulos}"/>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img7.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img7.png" Aspect="AspectFill"></Image>
                       <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img8.png}" Aspect="AspectFill"></Image>
 
                       <Grid Margin="20,20">
