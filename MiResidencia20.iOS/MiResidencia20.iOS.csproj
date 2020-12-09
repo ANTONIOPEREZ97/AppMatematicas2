@@ -156,12 +156,9 @@
     <BundleResource Include="Resources\icono_Unidad8.png" />
     <BundleResource Include="Resources\icono_Unidad9.png" />
     <BundleResource Include="Resources\logoAppMate.png" />
+    <BundleResource Include="Resources\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\icon.png">
-      <SubType></SubType>
-      <Generator></Generator>
-    </AndroidResource>
     <AndroidResource Include="Resources\icono_Lectura.png">
       <SubType></SubType>
       <Generator></Generator>
