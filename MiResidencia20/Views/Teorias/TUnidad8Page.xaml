@@ -51,12 +51,6 @@
                         <Button Text="Ejercicios" Clicked="Btn_irAEjerciciosU8" Grid.Row="0" Grid.Column="1"/> 
                       </Grid>
 
-                      <!--WebView: Video tutorial-->
-                        <WebView x:Name="WebView" VerticalOptions="FillAndExpand"
-                                Source="https://www.youtube.com/watch?v=C0BIfEB0eJM">
-                               
-                        </WebView>
-
                   </StackLayout>
                 </ScrollView>
            </StackLayout>      

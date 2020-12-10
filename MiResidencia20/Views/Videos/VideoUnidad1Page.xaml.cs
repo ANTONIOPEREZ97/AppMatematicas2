@@ -11,5 +11,10 @@ namespace MiResidencia20.Views.Videos
         {
             InitializeComponent();
         }
+
+
+        //var anchura = 600;
+        //WebView.HeightRequest = anchura; 
+        //var meWebUnidad1 = WebView.Source;
     }
 }

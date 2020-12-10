@@ -10,33 +10,33 @@
                <Label Text="Unidad 3. Expresiones Algebraicas" Style="{StaticResource Lbl_TituloPrincipal}"/>
                  <ScrollView>
                     <StackLayout>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img1.png}" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img1.png" Aspect="AspectFill"></Image>
 
                         <!-- Suma y resta de polinomios-->
                         <Label Text="3.1 Suma y resta de polinomios" Style="{StaticResource Lbl_Subtitulos}"/>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img2.png}" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img2.png" Aspect="AspectFill"></Image>
 
                         <!-- Multiplicación de expresiones algebraicas-->
                         <Label Text="3.2  Multiplicación de expresiones algebraicas" Style="{StaticResource Lbl_Subtitulos}"/>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img3.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img4.png}" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img3.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img4.png" Aspect="AspectFill"></Image>
 
                         <!-- Productos notables-->
                         <Label Text="3.3  Productos notables" Style="{StaticResource Lbl_Subtitulos}"/>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img5.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img6.png}" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img5.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img6.png" Aspect="AspectFill"></Image>
 
                         <!-- Factorización-->
                         <Label Text="3.4  Factorización" Style="{StaticResource Lbl_Subtitulos}"/>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img7.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img8.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img9.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img10.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img11.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img12.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img13.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img14.png}" Aspect="AspectFill"></Image>
-                        <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau3_img15.png}" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img7.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img8.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img9.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img10.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img11.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img12.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img13.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img14.png" Aspect="AspectFill"></Image>
+                        <Image Source="teoriau3_img15.png" Aspect="AspectFill"></Image>
 
 
                          <Grid Margin="20,20">
@@ -52,12 +52,6 @@
                         <Button Text="Video Tutorial" Clicked="Btn_irAVideoTuturial" Grid.Row="0" Grid.Column="0"/> 
                         <Button Text="Ejercicios" Clicked="Btn_irAEjerciciosU3" Grid.Row="0" Grid.Column="1"/> 
                       </Grid>
-
-                        <!--WebView: Video tutorial-->
-                          <WebView x:Name="WebView" VerticalOptions="FillAndExpand"
-                                   Source="https://www.youtube.com/watch?v=IN_CIbJF0-s">
-                               
-                          </WebView>
 
                       </StackLayout>
                 </ScrollView>

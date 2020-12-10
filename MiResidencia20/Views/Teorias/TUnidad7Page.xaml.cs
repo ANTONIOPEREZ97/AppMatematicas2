@@ -23,11 +23,6 @@ namespace MiResidencia20.Views.Teorias
             //1.Navego VideoU7
             Navigation.PushAsync(new VideoUnidad7Page());
 
-            //var anchura = 600;
-            //WebView.HeightRequest = anchura;
-            //var meWebUnidad7 = WebView.Source;
-
-           
         }
     }
 }
