@@ -1,7 +1,15 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MiResidencia20.Views.Videos.VideoUnidad5Page">
+             x:Class="MiResidencia20.Views.Videos.VideoUnidad5Page"
+             Title="Video tutorial">
     <StackLayout>
-        <Label Text="Video player Unit 5"/>
+            <!--Unidad 5. Ecuaciones-->
+        <WebView x:Name="webVideo"
+                 WidthRequest="600"
+                 HeightRequest="650">
+                 
+        </WebView>
+
     </StackLayout>
+
 </ContentPage>

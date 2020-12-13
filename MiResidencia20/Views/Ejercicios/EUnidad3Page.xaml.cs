@@ -13,7 +13,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] primerEjercicio =
         {
               //1:R = B.Grado 2
-            "1. De que grado es el polinomio 2x²-3x+4 :",
+            "1. De que grado es el polinomio 2x² - 3x + 4 :",
 
             "A. Grado 3",
             "B. *Grado 2",
@@ -23,7 +23,7 @@ namespace MiResidencia20.Views.Ejercicios
         string[] segundoEjercicio =
         {
               //2:R = C.Trinomio 
-            "2. Qué tipo de polinomio es la siguiente expresión 2x²-3x + 4 :",
+            "2. Qué tipo de polinomio es la siguiente expresión 2x² - 3x + 4 :",
 
             "A. Binomio",
             "B. Monomio",

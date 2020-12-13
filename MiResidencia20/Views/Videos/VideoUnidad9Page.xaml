@@ -1,9 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MiResidencia20.Views.Videos.VideoUnidad9Page">
+             x:Class="MiResidencia20.Views.Videos.VideoUnidad9Page"
+             Title="Video tutorial">
 
     <StackLayout>
-
-        <Label Text="Video player Unit 9 finish"/>
+            <!--Unidad 9. Trigonometría de triángulos rectángulos-->
+        <WebView x:Name="webVideo"
+            WidthRequest="600"
+            HeightRequest="650">
+                 
+    </WebView>
     </StackLayout>
 </ContentPage>

@@ -10,6 +10,7 @@ namespace MiResidencia20.Views.Videos
         public VideoUnidad7Page()
         {
             InitializeComponent();
+            webVideo.Source = "https://www.youtube.com/embed/0kv5W5B7HKA";
         }
     }
 }

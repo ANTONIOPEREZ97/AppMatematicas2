@@ -10,11 +10,10 @@ namespace MiResidencia20.Views.Videos
         public VideoUnidad1Page()
         {
             InitializeComponent();
+            webVideo.Source = "https://www.youtube.com/embed/J6y-FnhXPsY";
+
+
+           
         }
-
-
-        //var anchura = 600;
-        //WebView.HeightRequest = anchura; 
-        //var meWebUnidad1 = WebView.Source;
     }
 }
