@@ -9,11 +9,12 @@ namespace MiResidencia20.Models
         [PrimaryKey, AutoIncrement,NotNull]
         //Declaro mis propiedades
         public int Id { get; set; }
-        public String Nombre { get; set; } //Nombre de logueo para iniciar sesion
-        public String Apellido{ get; set; }
-        public String Carrera { get; set; }
-        public String Grupo { get; set; }
-        public String Periodo { get; set; }
+        public string Nombre { get; set; } //Nombre de logueo para iniciar sesion
+        public string Apellido{ get; set; }
+        public string Carrera { get; set; }
+        public string Grupo { get; set; }
+        public string Periodo { get; set; }
         public DateTime FechaCreacion { get; set; }
+
     }
 }

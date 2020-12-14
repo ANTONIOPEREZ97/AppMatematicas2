@@ -38,6 +38,7 @@ namespace MiResidencia20.Views
                 var estudiante = new Estudiante
                 {
                     Nombre = nombreEntry.Text,//Tolower=Minusculas
+                    Apellido= apellidoEntry.Text,
                     Carrera = carreraEntry.Text,
                     Grupo = grupoEntry.Text,
                     Periodo = periodoEntry.Text,

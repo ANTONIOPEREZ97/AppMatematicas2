@@ -3,7 +3,7 @@
              x:Class="MiResidencia20.Views.BienvenidaPage" Title="Bienvenido">
     <ScrollView>
         
-        <StackLayout Padding="0,120,0,0">
+        <StackLayout Padding="0,95,0,0">
         
         <Image Source="logoAppMate.png" WidthRequest="200"></Image>
 
@@ -14,7 +14,7 @@
                 <Label Text="AppMatemáticas" TextColor="Black"
                        HorizontalOptions="CenterAndExpand"  FontSize="20"/>
 
-                <Label Padding="10,10" Text="Un apoyo extra para el curso Introductorio a la ingeniería del Instituto Tecnológico de Tuxtla Gutiérrez."
+                <Label Padding="10,10" Text="Un apoyo extra para el curso Introductorio a la ingeniería del Instituto Tecnológico campus Tuxtla Gutiérrez."
                    TextColor="#51555E" HorizontalOptions="StartAndExpand"  FontAttributes="Italic"/>
             </StackLayout>
            

@@ -25,7 +25,7 @@
                       <!-- Ecuaciones trigonométricas básicas-->
                       <Label Text="9.4. Ecuaciones trigonométricas básicas" Style="{StaticResource Lbl_Subtitulos}"/>
                       <Image Source="teoriau9_img7.png" Aspect="AspectFill"></Image>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau9_img8.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau9_img8.png" Aspect="AspectFill"></Image>
 
                       <Grid Margin="20,20">
                           <Grid.RowDefinitions>

@@ -9,7 +9,7 @@
                <Label Text="Unidad 4. Expresiones Racionales" Style="{StaticResource Lbl_TituloPrincipal}"/>
                 <ScrollView>
                   <StackLayout>
-                      <Image Source="{local:ImageResource MiResidencia20.Imagenes.Teoria.teoriau4_img1.png}" Aspect="AspectFill"></Image>
+                      <Image Source="teoriau4_img1.png" Aspect="AspectFill"></Image>
                       <!-- Sumas y restas-->
                       <Label Text="4.1. Sumas y restas" Style="{StaticResource Lbl_Subtitulos}" Margin="0" Padding="0"/>
                       <Image Source="teoriau4_img2.png" Aspect="AspectFill"></Image>

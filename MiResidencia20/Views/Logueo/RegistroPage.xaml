@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MiResidencia20.Views.RegistroPage" Title="Registrar Usuario">
+             x:Class="MiResidencia20.Views.RegistroPage"
+             Title="Registrar Usuario">
    
     <ScrollView>
         <!--Logos instutucionales-->
-        <StackLayout Margin="10,30">
+        <StackLayout Margin="10,25">
          
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -23,7 +24,7 @@
              
 
             <!--Fomulario-->
-            <StackLayout Padding="10,30">
+            <StackLayout Padding="10,20">
              <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -35,7 +36,8 @@
                         <RowDefinition Height="80"/>
                         <RowDefinition Height="80"/>
                         <RowDefinition Height="80"/>
-                        <RowDefinition/>
+                        <RowDefinition Height="80"/>
+                        <RowDefinition Height="80"/>
                     </Grid.RowDefinitions>
 
                         <!--Nombre-->
@@ -43,13 +45,22 @@
                         <StackLayout Grid.Column="1" Grid.Row="0">
                             <Label Text="Nombre"/>
                             <Frame HasShadow="True">
-                                <Entry Placeholder="Nombre del usuario"  Keyboard="Text"  x:Name="nombreEntry"/>
+                                <Entry Placeholder="Nombre de usuario"  Keyboard="Text"  x:Name="nombreEntry"/>
+                            </Frame>
+                        </StackLayout>
+
+                        <!--Apellidos-->
+                        <Image Source="icono_Usuario.png" Grid.Column="0" Grid.Row="1" VerticalOptions="CenterAndExpand"></Image>
+                        <StackLayout Grid.Column="1" Grid.Row="1">
+                            <Label Text="Apellidos"/>
+                            <Frame HasShadow="True">
+                                <Entry Placeholder="Apellidos"  Keyboard="Text"  x:Name="apellidoEntry"/>
                             </Frame>
                         </StackLayout>
 
                         <!--Carrera-->
-                        <Image Source="icono_Carrera.png" Grid.Column="0" Grid.Row="1"></Image>
-                        <StackLayout  Grid.Column="1" Grid.Row="1">
+                        <Image Source="icono_Carrera.png" Grid.Column="0" Grid.Row="2"></Image>
+                        <StackLayout  Grid.Column="1" Grid.Row="2">
                             <Label Text="Carrera"/>
                             <Frame HasShadow="True">
                              <Entry  Placeholder="Nombre de la carrera" Keyboard="Text" x:Name="carreraEntry"/>
@@ -75,8 +86,8 @@
                         </StackLayout>
 
                         <!--Grupo-->
-                        <Image Source="icono_Grupo.png" Grid.Column="0" Grid.Row="2"></Image>
-                        <StackLayout Grid.Column="1" Grid.Row="2">
+                        <Image Source="icono_Grupo.png" Grid.Column="0" Grid.Row="3"></Image>
+                        <StackLayout Grid.Column="1" Grid.Row="3">
                             <Label Text="Grupo"/>
                             <Frame HasShadow="True">
                                 <Entry Placeholder="Grupo" Keyboard="Text" x:Name="grupoEntry"/>
@@ -84,8 +95,8 @@
                         </StackLayout>
 
                       <!--Periodo-->
-                        <Image Source="icono_Periodo.png" Grid.Column="0" Grid.Row="3"></Image>
-                        <StackLayout  Grid.Column="1" Grid.Row="3">
+                        <Image Source="icono_Periodo.png" Grid.Column="0" Grid.Row="4"></Image>
+                        <StackLayout  Grid.Column="1" Grid.Row="4">
                             <Label Text="Periodo"/>
                             <Frame  HasShadow="True">
                                 <Entry Placeholder="ENE-JUN/2020" Keyboard="Text" x:Name="periodoEntry"/>
@@ -93,7 +104,7 @@
                         </StackLayout>
 
                  <!--Boton de registrar-->
-                        <StackLayout  Grid.ColumnSpan="2" Grid.Row="4" Margin="80,50">
+                        <StackLayout Grid.ColumnSpan="2" Grid.Row="5" Margin="60,15">
                         <Button Text="Registrarse" Clicked="Btn_Registrar" WidthRequest="20"/>
                         </StackLayout>
                 </Grid>
