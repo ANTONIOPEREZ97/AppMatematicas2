@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using MiResidencia20.Models;
-using MiResidencia20.Data;
 using SQLite;
+using System.Collections.Generic;
 using Xamarin.Forms;
+using System.IO;
+using MiResidencia20.Models;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Logueo
 {
@@ -14,29 +15,27 @@ namespace MiResidencia20.Views.Logueo
             InitializeComponent();
         }
 
-        async void Btn_IniciarConUsuario(System.Object sender, System.EventArgs e)
+        async  void Btn_IniciarConUsuario(System.Object sender, System.EventArgs e)
         {
+            var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+            var db = new SQLiteConnection(dbpat);
+            var myquery = db.Table<Student>().Where(s => s.Name.Equals(nombreRegistradoEntry.Text)).FirstOrDefault();
 
-            
-           
-            if (string.IsNullOrEmpty(this.nombreUsuarioEntry.Text))
+            if (myquery != null)
             {
-                await DisplayAlert("Error al iniciar sesión ", "Inserte el nombre de usuario correcto", "ok");
-
+                App.Current.MainPage = new NavigationPage(new MenuTabbedPage());
+                await DisplayAlert("Bienvenido", "AppMatemáticas", "Ok");
             }
 
-           
             else
             {
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                   await DisplayAlert("Error", "Nombre de usuario incorrecto ", "Ok");
 
-                await Navigation.PushAsync(new MenuTabbedPage());
-                await DisplayAlert("Bienvenido", "AppMatemáticas", "Ok");
-
-
+                   
+                });
             }
-
-            
-
         }
     }
 }

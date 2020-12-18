@@ -15,15 +15,17 @@
             <Label Text="Inicia sesión con tu nombre de usuario para empezar..."
                     TextColor="#51555E" HorizontalOptions="StartAndExpand"  FontAttributes="None"/>
 
-              <StackLayout Margin="10,60">
+           <Frame HasShadow="True">
+                     <Entry Placeholder="Nombre de usuario"  Keyboard="Text"
+                     x:Name="nombreRegistradoEntry"/>
+            </Frame>
+
+              <StackLayout Margin="50,20">
                 
-                            <Frame HasShadow="True">
-                                <Entry Placeholder="Nombre de usuario"  Keyboard="Text"
-                                       x:Name="nombreUsuarioEntry"/>
-                            </Frame>
+                           
 
                  <Button Text="Iniciar sesión " Clicked="Btn_IniciarConUsuario" 
-                         HeightRequest="45"  Padding="0" CornerRadius="3" Margin="0,15"/>
+                         HeightRequest="40"  Padding="0" CornerRadius="3" Margin="0,15"/>
 
             </StackLayout>
      </StackLayout>

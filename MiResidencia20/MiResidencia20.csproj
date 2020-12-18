@@ -13,7 +13,7 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
-    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\" />
@@ -24,12 +24,15 @@
     <Folder Include="Views\Ejercicios\" />
     <Folder Include="Views\Evaluaciones\" />
     <Folder Include="Views\Menu\" />
-    <Folder Include="Data\" />
     <Folder Include="Views\About\" />
     <Folder Include="Views\Videos\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Data\InfoMasterDetailPage.xaml.cs" />
+    <Compile Remove="Data\DatabaseContext.cs" />
+    <Compile Remove="Models\Estudiante.cs" />
+    <Compile Remove="Models\DBTables.cs" />
+    <Compile Remove="Models\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Logueo\BienvenidaPage.xaml.cs">

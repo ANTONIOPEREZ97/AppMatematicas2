@@ -19,10 +19,11 @@
             </StackLayout>
            
 
-                <StackLayout Margin="20,5" Spacing="25">
-                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro" HeightRequest="45"/>
-                   <Button Text="Iniciar sesión " Clicked="Btn_IniciarSesion" HeightRequest="45"
-                           Opacity="0.6"/>
+                <StackLayout Margin="50,20,50,0" Spacing="10" >
+                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro" HeightRequest="40"/>
+                   <Button Text="Iniciar sesión " Clicked="Btn_IniciarSesion" HeightRequest="40" BackgroundColor="#0D47A1"
+                           TextColor="White"
+                           Opacity="0.5"/>
                 </StackLayout>
 
             <StackLayout HorizontalOptions="StartAndExpand"  Margin="50,60,0,0">

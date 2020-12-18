@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using Xamarin.Forms;
 using MiResidencia20.Views.Logueo;
-using MiResidencia20.Models;
 using SQLite;
+using MiResidencia20.Models;
+using System.IO;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views
 {
@@ -12,44 +14,49 @@ namespace MiResidencia20.Views
         public RegistroPage()
         {
             InitializeComponent();
+       
         }
-
 
         async void  Btn_Registrar(System.Object sender, System.EventArgs e)
         {
             //1. Hago mis validaciones para los campos no vacíos
-            if (nombreEntry.Text == null || carreraEntry.Text == null || grupoEntry.Text == null || periodoEntry.Text == null)
+            if (nombreEntry.Text == null || apellidoEntry.Text ==null || carreraEntry.Text == null || grupoEntry.Text == null || periodoEntry.Text == null)
             {
                 await DisplayAlert("Error al registrarse", "Llene todos los campos!", "ok");
+                
             }
             else
             {
-                await DisplayAlert("Felicitaciones", "¡Usuario creado exitosamente!", "Ok");
-                await Navigation.PopAsync();//Navego hacia la pagina anterior para entrar con su usuario
+                //2. Empiezo a crear mi base de datos aqui
+                var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"EstudianteDB.db");
+                var db = new SQLiteConnection(dbpat);
+                db.CreateTable<Student>();
+                //3. Creo mi tabla para los resultados de la Evaluación
+                db.CreateTable<ResultEvaluation>();
 
-                //await Navigation.PushAsync(new MenuTabbedPage());
 
-            }
+                //3 Empiezo a crear la base de datos aqui
 
-            //2.Me sirve si en dado caso exista un error al almacenar en la base de datos
-            try
-            {
-                //3. Declaro una variable para almacenar el modelo Estudiante
-                var estudiante = new Estudiante
+                var estudiante = new Student()
                 {
-                    Nombre = nombreEntry.Text,//Tolower=Minusculas
-                    Apellido= apellidoEntry.Text,
-                    Carrera = carreraEntry.Text,
-                    Grupo = grupoEntry.Text,
-                    Periodo = periodoEntry.Text,
-                    FechaCreacion = DateTime.Now
-                };
-            }
-            catch (Exception ex)
-            {
-                await DisplayAlert("Error",ex.Message, "ok");
-            }
+                    Name = nombreEntry.Text,
+                    LastName = apellidoEntry.Text,
+                    Career = carreraEntry.Text,
+                    Group = grupoEntry.Text,
+                    Period = periodoEntry.Text
 
+                };
+                db.Insert(estudiante);
+
+
+                Device.BeginInvokeOnMainThread(async () =>
+                {
+                    await DisplayAlert("Felicitaciones", "Usuario creado exitosamente", "Ok");
+                    await Navigation.PushAsync(new IniciarSesionPage());
+                    
+                });
+
+            }
         }
     }
      

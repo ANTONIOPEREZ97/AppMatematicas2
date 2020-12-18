@@ -223,6 +223,9 @@ namespace MiResidencia20.Views.Evaluaciones
                     if (calificacionPorcentaje >= 80)
                     {
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+
                         Navigation.PopAsync();
                     }
 

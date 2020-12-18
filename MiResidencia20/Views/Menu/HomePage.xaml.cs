@@ -16,16 +16,16 @@ namespace MiResidencia20.Views.Menu
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            LoadItemsEstudiante();
+            CargarDatosEstudiantes();
         }
 
         //2. Me sirve para cargar los datos  || estaba en privado
-        public async void LoadItemsEstudiante()
+          void CargarDatosEstudiantes()
         {
 
-            var items = await App.Context.GetItemEstudiantesAsync();
+           // var items = await App.Context.GetItemEstudiantesAsync();
             //Enlazo con mi propiedad xaml listview  listaDatosAlumnos x:Name de listView 
-            ListaDatosAlumno.ItemsSource = items;
+           // ListaDatosAlumno.ItemsSource = items;
 
         }
     }
