@@ -1,15 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.IO;
+using SQLite;
 using Xamarin.Forms;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Evaluaciones
 {
     public partial class EvalUnidad9Page : ContentPage
     {
         int contadorACiertoCorrecto = 0;
-        #region DefinitionsEvaluations
 
+        #region DefinitionsEvaluations
         string[] primeraPregunta =
        {
             //1:R =  C. π/3
@@ -17,7 +19,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
             "A. π/ 6",
             "B. π/4 ",
-            "C. *π/3"
+            "C. π/3"
         };
 
 
@@ -26,7 +28,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //2:R = A. -1
             "2. Resuelva la expresión tan²x - sec²x :",
 
-            "A. *-1",
+            "A. -1",
             "B. 1",
             "C. 0"
         };
@@ -36,7 +38,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //3:R = A. 1
             "3. Simplifique la  expresión trigonométrica  sen x sec x / tan x : ",
 
-            "A. *1",
+            "A. 1",
             "B. 0",
             "C. -1"
         };
@@ -48,7 +50,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
             "A. sec ø",
             "B. cos ø",
-            "C. *tan ø"
+            "C. tan ø"
 
         };
 
@@ -58,7 +60,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "5. La expresión  tan ø +  cos(-ø) + tan (-ø) es :",
 
             "A. cot ø",
-            "B. *cos ø",
+            "B. cos ø",
             "C. tan ø"
 
         };
@@ -222,12 +224,36 @@ namespace MiResidencia20.Views.Evaluaciones
                     if (calificacionPorcentaje >= 80)
                     {
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu9 = new ResultEvaluation
+                        {
+                            ResultUnit9 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu9);
+
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu9 = new ResultEvaluation
+                        {
+                            ResultUnit9 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu9);
+
                         Navigation.PopAsync();
                     }
                     break;

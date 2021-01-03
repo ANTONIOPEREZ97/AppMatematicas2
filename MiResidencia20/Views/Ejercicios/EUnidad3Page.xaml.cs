@@ -16,7 +16,7 @@ namespace MiResidencia20.Views.Ejercicios
             "1. De que grado es el polinomio 2x² - 3x + 4 :",
 
             "A. Grado 3",
-            "B. *Grado 2",
+            "B. Grado 2",
             "C. Grado 1"
         };
 
@@ -27,7 +27,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. Binomio",
             "B. Monomio",
-            "C. *Trinomio"
+            "C. Trinomio"
 
         };
 
@@ -37,7 +37,7 @@ namespace MiResidencia20.Views.Ejercicios
             "3. Qué tipo de polinomio es la siguiente expresión 9x¹² :",
 
             "A. Doceavo término",
-            "B. *Monomio",
+            "B. Monomio",
             "C. Binomio"
         };
 
@@ -50,7 +50,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. 8 +2x⁷ ",
             "B. 8 + x⁷ ",
-            "C. *8x⁷"
+            "C. 8x⁷"
         };
 
 
@@ -59,7 +59,7 @@ namespace MiResidencia20.Views.Ejercicios
             //5:R = A. a²  + 2ab  + b²
             "5. El resultado de  (a +b)²  es: ",
 
-            "A. *a²  + 2ab  + b²",
+            "A. a²  + 2ab  + b²",
             "B. a²  - 2ab  + b²",
             "C. a² + b²"
         };

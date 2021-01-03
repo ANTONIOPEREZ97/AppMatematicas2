@@ -16,7 +16,7 @@ namespace MiResidencia20.Views.Ejercicios
             "1. La función logarítmica con base a se denota por :",
 
             "A. log a y = x  ",
-            "B. *log a",
+            "B. log a",
             "C. log a x = y"
         };
 
@@ -25,7 +25,7 @@ namespace MiResidencia20.Views.Ejercicios
               //2:R = A. Si una es verdadera y la otra
             "2. Las formas logarítmicas y exponenciales son ecuaciones equivalentes :",
 
-            "A. *Si una es verdadera y la otra",
+            "A. Si una es verdadera y la otra",
             "B.  Si están definidas",
             "C.  Si las bases no son negativas"
         };
@@ -35,7 +35,7 @@ namespace MiResidencia20.Views.Ejercicios
             //3:R = A. 1/2
             "3. El logaritmo de log16  4  es :",
 
-            "A. *1/2 ",
+            "A. 1/2 ",
             "B. 3/2",
             "C. 1/8"
         };
@@ -47,7 +47,7 @@ namespace MiResidencia20.Views.Ejercicios
             "4. El logaritmo  con  base 10 se denomina :",
 
             "A. Logaritmo natural ",
-            "B. *Logaritmo común",
+            "B. Logaritmo común",
             "C. Función logarítmica "
         };
 
@@ -56,7 +56,7 @@ namespace MiResidencia20.Views.Ejercicios
             //5:R = A. Logaritmo natural 
             "5. El logaritmo con base e se denomina : ",
 
-            "A. *Logaritmo natural ",
+            "A. Logaritmo natural ",
             "B. Logaritmo común",
             "C. Función logarítmica "
         };

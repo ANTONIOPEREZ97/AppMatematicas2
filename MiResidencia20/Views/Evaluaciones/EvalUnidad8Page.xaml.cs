@@ -1,21 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.IO;
+using SQLite;
 using Xamarin.Forms;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Evaluaciones
 {
     public partial class EvalUnidad8Page : ContentPage
     {
         int contadorACiertoCorrecto = 0;
-        #region DefinitionsEvaluations
 
+        #region DefinitionsEvaluations
         string[] primeraPregunta =
        {
             //1:R = A. 5²  = 25
             "1. Exprese la ecuación log5  25 = 2   en forma exponencial : ",
 
-            "A. *5²  = 25   ",
+            "A. 5²  = 25   ",
             "B. 5²  = 10  ",
             "C. 5²"
         };
@@ -26,7 +28,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //2:R = A. eˆx  
             "2. Exprese la ecuación ln  5 = x en forma exponencial :",
 
-            "A. *eˆx =  5 ",
+            "A. eˆx =  5 ",
             "B. eˆx",
             "C. 5"
         };
@@ -36,7 +38,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //3:R = A. ln y  = 3
             "3. Exprese la ecuación e³  = y en forma logarítmica:  ",
 
-            "A. *ln y = 3 ",
+            "A. ln y = 3 ",
             "B. ln 3",
             "C. ln y. "
         };
@@ -48,7 +50,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
             "A. 3/2",
             "B. 5/2",
-            "C. *1/2   "
+            "C. 1/2   "
 
         };
 
@@ -58,7 +60,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "5. Usando la definición logarítmica halle el valor de x de la siguiente log2 X = 5 :",
 
             "A. 68",
-            "B. *32",
+            "B. 32",
             "C. 18"
 
         };
@@ -71,7 +73,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
         public void CargarPreguntaUno()
         {
-            //1:R = * 5²  = 25
+            //1:R =  5²  = 25
             labelPreguntaDescripcion.Text = primeraPregunta[0];
             labelRespuestaA.Text = primeraPregunta[1];
             labelRespuestaB.Text = primeraPregunta[2];
@@ -223,12 +225,36 @@ namespace MiResidencia20.Views.Evaluaciones
                     if (calificacionPorcentaje >= 80)
                     {
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu8 = new ResultEvaluation
+                        {
+                            ResultUnit8 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu8);
+
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu8 = new ResultEvaluation
+                        {
+                            ResultUnit8 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu8);
+
                         Navigation.PopAsync();
                     }
                     break;

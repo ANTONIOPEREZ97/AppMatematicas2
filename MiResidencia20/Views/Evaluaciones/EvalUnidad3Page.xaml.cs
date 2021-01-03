@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.IO;
+using SQLite;
 using Xamarin.Forms;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Evaluaciones
 {
@@ -16,7 +18,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
             "A. a³ - 2ab + b³",
             "B. a³ + b³",
-            "C. *a³ + 3a²b - 3ab² + b³"
+            "C. a³ + 3a²b - 3ab² + b³"
         };
 
 
@@ -25,7 +27,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //2:R = A. Cuarto término 
             "2. Qué tipo de polinomio es el siguiente x⁻¹ - x² + x³ - x⁴ :",
 
-            "A. *Cuarto término ",
+            "A. Cuarto término ",
             "B. Cuarto grado",
             "C. Sexto término"
         };
@@ -36,7 +38,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "3. Factorice la ecuación x² + 6x + 9 :",
 
             "A. (x - 3)²",
-            "B. *(x + 3)²",
+            "B. (x + 3)²",
             "C. (x + 3)(x + 2)"
         };
 
@@ -45,7 +47,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //4:R = A. *y³ + 6y² + 12y + 8
             "4. Multiplique la expresión algebraica (y + 2)³ :",
 
-            "A. *y³ + 6y² + 12y + 8 ",
+            "A. y³ + 6y² + 12y + 8 ",
             "B. y³ + 6y² + 12y + 8",
             "C. y³ + 6y² + 12y + 6"
 
@@ -56,7 +58,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //5:R = A. Dominio x ≥ -3
             "5. Encuentra el dominio de la expresión  √x + 3 : ",
 
-            "A. *Dominio x ≥ -3",
+            "A. Dominio x ≥ -3",
             "B. Dominio x ≤ -3",
             "C. Dominio x = -3"
 
@@ -223,12 +225,36 @@ namespace MiResidencia20.Views.Evaluaciones
                     if (calificacionPorcentaje >= 80)
                     {
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu3 = new ResultEvaluation
+                        {
+                            ResultUnit3 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu3);
+
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu3 = new ResultEvaluation
+                        {
+                            ResultUnit3 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu3);
+
                         Navigation.PopAsync();
                     }
                     break;

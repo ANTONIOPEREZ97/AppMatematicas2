@@ -33,12 +33,9 @@
     <Compile Remove="Models\Estudiante.cs" />
     <Compile Remove="Models\DBTables.cs" />
     <Compile Remove="Models\User.cs" />
+    <Compile Remove="Views\Logueo\BienvenidaPage.xaml.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Logueo\BienvenidaPage.xaml.cs">
-      <DependentUpon>BienvenidaPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\Logueo\RegistroPage.xaml.cs">
       <DependentUpon>RegistroPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -230,6 +227,7 @@
     <EmbeddedResource Remove="Imagenes\Teoria\teoriau1_img5.png" />
     <EmbeddedResource Remove="Imagenes\Teoria\teoriau1_img6.png" />
     <EmbeddedResource Remove="Imagenes\Teoria\teoriau1_img7.png" />
+    <EmbeddedResource Remove="Views\Logueo\BienvenidaPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Remove="Imagenes\Teoria\teoriau4_img2.png" />

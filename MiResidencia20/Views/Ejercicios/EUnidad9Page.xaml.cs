@@ -16,7 +16,7 @@ namespace MiResidencia20.Views.Ejercicios
             "1. Evaluar la expresión sen 30˚ csc 30˚ :",
 
             "A. 5",
-            "B. *1",
+            "B. 1",
             "C. 3"
         };
 
@@ -25,9 +25,9 @@ namespace MiResidencia20.Views.Ejercicios
               //2:R = A  √3/2
             "2. Evaluar la expresión sen π/6 + cos π/6 :",
 
-            "A. *√3/2",
-            "B.  1",
-            "C.  0.8925 "
+            "A. √3/2",
+            "B. 1",
+            "C. 0.8925 "
         };
 
         string[] tercerEjercicio =
@@ -36,7 +36,7 @@ namespace MiResidencia20.Views.Ejercicios
             "3. Evaluar la expresión (cos 30˚)²-(sen 30˚)²",
 
             "A. 1/5 ",
-            "B. *1/2",
+            "B. 1/2",
             "C. 1/8"
         };
 
@@ -48,7 +48,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. cos t ",
             "B. csc t ",
-            "C. *sen t"
+            "C. sen t"
         };
 
         string[] quintoEjercicio =
@@ -57,7 +57,7 @@ namespace MiResidencia20.Views.Ejercicios
             "5. La expresión trigonométrica sen u + cot u cos u es :",
 
             "A. tan u ",
-            "B. *csc u",
+            "B. csc u",
             "C. cot u "
         };
 

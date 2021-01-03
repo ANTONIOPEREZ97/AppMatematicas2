@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.IO;
+using SQLite;
 using Xamarin.Forms;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Evaluaciones
 {
@@ -16,7 +18,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "1. Expresar en variable*. La distancia (en millas) que un auto recorre en 45 min; " +
                 "s= rapidez del auto (en mi/h) :",
 
-            "A. *3/4 s",
+            "A. 3/4 s",
             "B. 1/2 s ",
             "C. 3/5 s"
         };
@@ -28,7 +30,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "2. Expresar en variable*. La suma de los tres enteros consecutivos; " +
                 "n = primer  entero de los tres :",
 
-            "A. *3n + 3 ",
+            "A. 3n + 3 ",
             "B. 3(3n) + 3",
             "C. 3 + n"
         };
@@ -40,7 +42,7 @@ namespace MiResidencia20.Views.Evaluaciones
                 "Si ella gana un total de $97,300, ¿cuál es su salario mensual? ",
 
             "A. $6,400",
-            "B. *$7,400",
+            "B. $7,400",
             "C. $7,350"
         };
 
@@ -51,7 +53,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
             "A. 4(l w)",
             "B. l w²",
-            "C. *l w"
+            "C. l w"
 
         };
 
@@ -60,7 +62,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //5:R = A. r = d/t
             "5. De la fórmula d = rt,  despeje r : ",
 
-            "A. *r = d/t",
+            "A. r = d/t",
             "B. r = dt",
             "C. r = t/d"
 
@@ -227,12 +229,36 @@ namespace MiResidencia20.Views.Evaluaciones
                     if (calificacionPorcentaje >= 80)
                     {
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu6 = new ResultEvaluation
+                        {
+                            ResultUnit6 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu6);
+
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu6 = new ResultEvaluation
+                        {
+                            ResultUnit6 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu6);
+
                         Navigation.PopAsync();
                     }
                     break;

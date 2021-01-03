@@ -20,7 +20,7 @@ namespace MiResidencia20.Views.Ejercicios
             " Además no pueden ser negativos:",
 
             "A. Números irracionales",
-            "B.*Números naturales",
+            "B. Números naturales",
             "C. Números enteros"
         };
 
@@ -28,7 +28,7 @@ namespace MiResidencia20.Views.Ejercicios
         {
               //2:R = A. Números enteros
             "2. Son números naturales, pero también pueden ser negativos:",
-            "A. *Números enteros",
+            "A. Números enteros",
             "B. Números irracionales",
             "C. Números naturales"
         };
@@ -39,7 +39,7 @@ namespace MiResidencia20.Views.Ejercicios
             "3.Son aquellos que no pueden expresarse como la fracción de dos enteros:",
             "A. Números enteros",
             "B. Números naturales",
-            "C. *Números irracionales"
+            "C. Números irracionales"
         };
 
 
@@ -50,7 +50,7 @@ namespace MiResidencia20.Views.Ejercicios
             "4. Propiedad de los números reales que cuando sumamos o multiplicamos dos números, " +
             "el orden no importa; A+B = B+A, AB=BA:",
 
-            "A. *Conmutatativa",
+            "A. Conmutatativa",
             "B. Distributiva",
             "C. Asociativa",
         };
@@ -63,7 +63,7 @@ namespace MiResidencia20.Views.Ejercicios
                 "no importa cuales dos de ellos sumamos o multiplicamos prirmero; " +
                 "(A+B)+C = A+(B+C), (AB)C = A(BC):",
 
-            "A. *Asociativa",
+            "A. Asociativa",
             "B. Conmutatativa",
             "C. Distributiva"
 

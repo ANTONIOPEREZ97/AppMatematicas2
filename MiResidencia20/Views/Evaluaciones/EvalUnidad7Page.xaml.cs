@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using SQLite;
 using Xamarin.Forms;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Evaluaciones
 {
@@ -16,7 +19,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "1. Una recta tiene la ecuación y = 3x + 2, cuál es la pendiente :",
 
             "A. 6",
-            "B. *3 ",
+            "B. 3 ",
             "C. 8"
         };
 
@@ -29,7 +32,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
             "A. y – 2 = 3x ",
             "B. 2 – 2y = 3(x - 1)",
-            "C. *y – 2 = 3(x - 1) "
+            "C. y – 2 = 3(x - 1) "
         };
 
         string[] terceraPregunta =
@@ -38,7 +41,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "3. La pendiente de una recta horizontal es :  ",
 
             "A. No está definida",
-            "B. *0",
+            "B. 0",
             "C. 1"
         };
 
@@ -47,7 +50,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //4:R = A. No está definida
             "4. La pendiente de una recta vertical  es : ",
 
-            "A. *No está definida ",
+            "A. No está definida ",
             "B. 0",
             "C. 1"
 
@@ -58,7 +61,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //5:R = A. x  = 2
             "5. La ecuación de la recta vertical que pasa por (2, 3) es : ",
 
-            "A. *x = 2",
+            "A. x = 2",
             "B. x = 1/2",
             "C. x = 1/5"
 
@@ -225,12 +228,36 @@ namespace MiResidencia20.Views.Evaluaciones
                     if (calificacionPorcentaje >= 80)
                     {
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu7 = new ResultEvaluation
+                        {
+                            ResultUnit7 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu7);
+
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu7 = new ResultEvaluation
+                        {
+                            ResultUnit7 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu7);
+
                         Navigation.PopAsync();
                     }
                     break;

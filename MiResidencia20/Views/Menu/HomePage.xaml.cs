@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Threading.Tasks;
+using SQLite;
 using Xamarin.Forms;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Menu
 {
@@ -23,9 +26,19 @@ namespace MiResidencia20.Views.Menu
           void CargarDatosEstudiantes()
         {
 
-           // var items = await App.Context.GetItemEstudiantesAsync();
+            // var items = await App.Context.GetItemEstudiantesAsync();
             //Enlazo con mi propiedad xaml listview  listaDatosAlumnos x:Name de listView 
-           // ListaDatosAlumno.ItemsSource = items;
+            // ListaDatosAlumno.ItemsSource = items;
+
+            //USO DE LA BASE DE DATOS CONSULTANDO LA TABLA Student
+            var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+            var db = new SQLiteConnection(dbpat);
+
+            var studentquery = db.Table<Student>().ToList();
+
+            //IMPRIMO LOS DATOS REGISTRADOS EN EL  FORMULARIO RegistroPage
+            ListaDatosEstudiante.ItemsSource = studentquery;
+            
 
         }
     }

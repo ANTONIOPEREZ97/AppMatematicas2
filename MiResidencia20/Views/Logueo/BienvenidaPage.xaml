@@ -1,36 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MiResidencia20.Views.BienvenidaPage" Title="Bienvenido">
-    <ScrollView>
-        
-        <StackLayout Padding="0,95,0,0">
-        
-        <Image Source="logoAppMate.png" WidthRequest="200"></Image>
-
-            <StackLayout Margin="20,70,0,0">
-                <Label  Text="Te damos la bienvenida a " TextColor="Black"
-                       HorizontalOptions="CenterAndExpand" FontSize="20"/>
-
-                <Label Text="AppMatemáticas" TextColor="Black"
-                       HorizontalOptions="CenterAndExpand"  FontSize="20"/>
-
-                <Label Padding="10,10" Text="Un apoyo extra para el curso Introductorio a la ingeniería del Instituto Tecnológico campus Tuxtla Gutiérrez."
-                   TextColor="#51555E" HorizontalOptions="StartAndExpand"  FontAttributes="Italic"/>
-            </StackLayout>
-           
-
-                <StackLayout Margin="50,20,50,0" Spacing="10" >
-                   <Button Text="Crear Usuario" Clicked="Btn_IrARegistro" HeightRequest="40"/>
-                   <Button Text="Iniciar sesión " Clicked="Btn_IniciarSesion" HeightRequest="40" BackgroundColor="#0D47A1"
-                           TextColor="White"
-                           Opacity="0.5"/>
-                </StackLayout>
-
-            <StackLayout HorizontalOptions="StartAndExpand"  Margin="50,60,0,0">
-                <Label Text="© 2020 #TecNM campus Tuxtla Gutiérrez, All Rights Reserved" TextColor="#333333"
-                       FontSize="10" FontAttributes="None"/>
-
-            </StackLayout>
-        </StackLayout>
-    </ScrollView>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MiResidencia20.Views.Logueo.BienvenidaPage">
+    <ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

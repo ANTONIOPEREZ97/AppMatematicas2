@@ -15,7 +15,7 @@ namespace MiResidencia20.Views.Ejercicios
             //1:R = A. Elevación y corrimiento
             "1. La pendiente de una recta es la relación entre :",
 
-            "A. *Elevación y corrimiento",
+            "A. Elevación y corrimiento",
             "B. Elevación y pendiente",
             "C. Inclinación y pendiente"
         };
@@ -26,8 +26,8 @@ namespace MiResidencia20.Views.Ejercicios
             "2. Formula de la  pendiente de una recta m que pasa por los dos puntos A y B :",
 
             "A. pendiente =  elevación / corrimiento",
-            "B. * m= y2 - y1 / x2 – x1 ",
-            "C. m= y – y1 /  x – x1 "
+            "B. m = y2 - y1 / x2 – x1 ",
+            "C. m = y – y1 /  x – x1 "
         };
 
         string[] tercerEjercicio =
@@ -37,7 +37,7 @@ namespace MiResidencia20.Views.Ejercicios
                 "P(2,1) y Q(8, 5) :",
 
             "A. 5/3",
-            "B. *2/3",
+            "B. 2/3",
             "C. 7/3"
         };
 
@@ -50,7 +50,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. Forma punto – pendiente I.",
             "B. Pendiente de una recta",
-            "C. *Forma punto – pendiente  E.  "
+            "C. Forma punto – pendiente  E.  "
         };
 
         string[] quintoEjercicio =
@@ -58,7 +58,7 @@ namespace MiResidencia20.Views.Ejercicios
             //5:R = A. x + 2y + 5 = 0
             "5. Encuentre la ecuación de la recta que paso por (1, -3) con pendiente de  - 1/2 : ",
 
-            "A.  *x + 2y + 5 = 0",
+            "A.  x + 2y + 5 = 0",
             "B.  2x + y + 5 = 2",
             "C.  2y + 6 = -x + 1"
         };

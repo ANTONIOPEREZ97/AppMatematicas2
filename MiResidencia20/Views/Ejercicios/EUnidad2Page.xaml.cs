@@ -16,7 +16,7 @@ namespace MiResidencia20.Views.Ejercicios
               //1:R = A. Sumar los exponentes
            "1. Para multiplicar dos potencias del mismo número es suficiente:",
 
-            "A. *Sumar los exponentes",
+            "A. Sumar los exponentes",
             "B. Restar los exponentes",
             "C. Multiplicar los exponentes"
         };
@@ -27,7 +27,7 @@ namespace MiResidencia20.Views.Ejercicios
             "2. Para dividir dos pontencias del mismo número es suficiente:",
 
             "A. Sumar los exponentes",
-            "B. *Restar los exponentes",
+            "B. Restar los exponentes",
             "C. Multiplicar los exponentes"
 
 
@@ -39,7 +39,7 @@ namespace MiResidencia20.Views.Ejercicios
             "3. Para elevar una  potencia a una nueva potencia es suficiente:",
             "A. Sumar los exponentes",
             "B. Restar los exponentes",
-            "C. *Multiplicar los exponentes"
+            "C. Multiplicar los exponentes"
         };
 
 
@@ -50,7 +50,7 @@ namespace MiResidencia20.Views.Ejercicios
             "4. El símbolo √ signfica:",
 
             "A. La raíz negativa",
-            "B. *La raíz positiva",
+            "B. La raíz positiva",
             "C. Asociativa",
         };
 
@@ -62,7 +62,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. 4",
             "B. 8",
-            "C. *Ninguno de los anteriores"
+            "C. Ninguno de los anteriores"
 
         };
 

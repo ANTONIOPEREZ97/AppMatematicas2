@@ -15,7 +15,7 @@ namespace MiResidencia20.Views.Ejercicios
               //1:R = A.Verdadero
             "1. Sumar el mismo número a cada lado de una ecuación siempre da una ecuación equivalente :",
 
-            "A. *Verdadero",
+            "A. Verdadero",
             "B. Falso",
             "C. Ninguno de los anteriores"
         };
@@ -25,7 +25,7 @@ namespace MiResidencia20.Views.Ejercicios
               //2:R = A.Verdadero
             "2. Multiplicar cada lado de una ecuación por el mismo número siempre da una ecuación equivalente :",
 
-            "A. *Verdadero",
+            "A. Verdadero",
             "B. Falso",
             "C. Ninguno de los anteriores"
 
@@ -36,7 +36,7 @@ namespace MiResidencia20.Views.Ejercicios
             //3:R = A. Verdadero
             "3. Elevar al cuadrado cada lado de una ecuación siempre da una ecuación equivalente :",
 
-            "A. *Verdadero",
+            "A. Verdadero",
             "B. Falso",
             "C. Ninguno de los anteriores"
         };
@@ -49,7 +49,7 @@ namespace MiResidencia20.Views.Ejercicios
             "4. La ecuación  ax² + bx + c = 0 tiene la forma de una :",
 
             "A. Ecuación no lineal",
-            "B. *Ecuación  cuadrática",
+            "B. Ecuación  cuadrática",
             "C. Ecuación lineal"
         };
 
@@ -59,7 +59,7 @@ namespace MiResidencia20.Views.Ejercicios
             //5:R = A. a²  - 2ab  + b²
             "5. El resultado de  (a - b)²  es: ",
 
-            "A. *a² - 2ab + b²",
+            "A. a² - 2ab + b²",
             "B. a² + 2ab + b²",
             "C. a² - b²"
         };

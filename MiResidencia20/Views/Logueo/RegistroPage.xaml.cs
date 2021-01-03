@@ -31,6 +31,7 @@ namespace MiResidencia20.Views
                 var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),"EstudianteDB.db");
                 var db = new SQLiteConnection(dbpat);
                 db.CreateTable<Student>();
+
                 //3. Creo mi tabla para los resultados de la Evaluación
                 db.CreateTable<ResultEvaluation>();
 

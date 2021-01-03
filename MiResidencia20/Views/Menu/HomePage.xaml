@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MiResidencia20.Views.Menu.HomePage">
 
-  <StackLayout Padding="0,70">
-      <Image Source="logoAppMate.png" WidthRequest="180"></Image>
+  <StackLayout Padding="0,50">
+      <Image Source="logo_ITTG.png" WidthRequest="180"></Image>
     <ListView   HasUnevenRows="True" x:Name="ListaDatosEstudiante">
         <ListView.ItemTemplate>
             <DataTemplate>

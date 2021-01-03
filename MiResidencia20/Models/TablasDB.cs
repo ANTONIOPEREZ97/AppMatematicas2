@@ -10,9 +10,9 @@ namespace MiResidencia20.Models
             public int Id { get; set; }
             public string Name { get; set; }
             public string LastName { get; set; }
-            public string Career { get; set; }
-            public string Group  { get; set; }
-            public string Period { get; set; }
+            public string Career   { get; set; }
+            public string Group    { get; set; }
+            public string Period   { get; set; }
             //public DateTime CreationDate { get; set; }
         }
 
@@ -20,16 +20,16 @@ namespace MiResidencia20.Models
         {
             [PrimaryKey, AutoIncrement]
             public int Id { get; set; }
-            [Indexed]
-            public int Unit1 { get; set; }
-            public int Unit2 { get; set; }
-            public int Unit3 { get; set; }
-            public int Unit4 { get; set; }
-            public int Unit5 { get; set; }
-            public int Unit6 { get; set; }
-            public int Unit7 { get; set; }
-            public int Unit8 { get; set; }
-            public int Unit9 { get; set; }
+           // [Indexed]
+            public int ResultUnit1 { get; set; }
+            public int ResultUnit2 { get; set; }
+            public int ResultUnit3 { get; set; }
+            public int ResultUnit4 { get; set; }
+            public int ResultUnit5 { get; set; }
+            public int ResultUnit6 { get; set; }
+            public int ResultUnit7 { get; set; }
+            public int ResultUnit8 { get; set; }
+            public int ResultUnit9 { get; set; }
 
         }
 

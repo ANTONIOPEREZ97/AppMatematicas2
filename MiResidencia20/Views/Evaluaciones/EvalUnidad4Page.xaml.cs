@@ -1,23 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.IO;
+using SQLite;
 using Xamarin.Forms;
+using static MiResidencia20.Models.TablasDB;
 
 namespace MiResidencia20.Views.Evaluaciones
 {
     public partial class EvalUnidad4Page : ContentPage
     {
         int contadorACiertoCorrecto = 0;
-        #region DefinitionsEvaluations
 
+        #region DefinitionsEvaluations
         string[] primeraPregunta =
        {
             //1:R = B. Expresión fraccionaria 
             "1. El cociente de dos expresiones algebraicas se denomina :",
 
-            "A.  Expresión racional",
-            "B. *Expresión fraccionaria",
-            "C.  Expresión irracional "
+            "A. Expresión racional",
+            "B. Expresión fraccionaria",
+            "C. Expresión irracional "
         };
 
 
@@ -27,7 +29,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "2.	Una expresión racional es una expresión fraccionaria donde " +
                 "el numerador y el denominador son :",
 
-            "A. *Polinomios",
+            "A. Polinomios",
             "B. Monomios",
             "C. Binomios conjugados"
         };
@@ -39,7 +41,7 @@ namespace MiResidencia20.Views.Evaluaciones
 
             "A. x ∉ R",
             "B. x ϵ N",
-            "C. *x ϵ R "
+            "C. x ϵ R "
         };
 
         string[] cuartaPregunta =
@@ -47,7 +49,7 @@ namespace MiResidencia20.Views.Evaluaciones
             //4:R = A. x + 2 / x² 
             "4. Simplifique la expresión 1/x+2 / 2x² :",
 
-            "A. *x + 2 / x²",
+            "A. x + 2 / x²",
             "B. 3/x²",
             "C. 3/x³"
 
@@ -59,7 +61,7 @@ namespace MiResidencia20.Views.Evaluaciones
             "5. Simplifique la expresión x/y / z :",
 
             "A. y / zx",
-            "B. *x / yz",
+            "B. x / yz",
             "C. zx / y"
 
         };
@@ -224,12 +226,37 @@ namespace MiResidencia20.Views.Evaluaciones
                     if (calificacionPorcentaje >= 80)
                     {
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Felicitaciones vas bien sigue así!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu4 = new ResultEvaluation
+                        {
+                            ResultUnit4 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu4);
+
                         Navigation.PopAsync();
                     }
 
                     else
                     { //calicación <80
                         DisplayAlert("CALIFICACIÓN", $"{calificacionPorcentaje}% , ¡Te falta mejorar un poco más!", "Ok");
+
+                        //IMPLEMENTACIÓN DE LA BASE DE DATOS
+                        var dbpat = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "EstudianteDB.db");
+                        var db = new SQLiteConnection(dbpat);
+
+                        var evaluacionu4 = new ResultEvaluation
+                        {
+                            ResultUnit4 = calificacionPorcentaje
+
+                        };
+                        db.Insert(evaluacionu4);
+
+
                         Navigation.PopAsync();
                     }
                     break;

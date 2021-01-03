@@ -17,7 +17,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. Cantidad de interés",
             "B. Tasa de interés",
-            "C. *Principal"
+            "C. Principal"
         };
 
         string[] segundoEjercicio =
@@ -26,7 +26,7 @@ namespace MiResidencia20.Views.Ejercicios
             "2. Para  modelar una ecuación  el primer paso es :",
 
             "A. Transformar las palabras en álgebra",
-            "B. *Identificar la variable",
+            "B. Identificar la variable",
             "C. Formular el modelo "
         };
 
@@ -36,8 +36,8 @@ namespace MiResidencia20.Views.Ejercicios
             "3. Para modelar un problema de mezclas y concentraciones " +
                 "la C de sustacia está dada por :",
 
-            "A. *C = x/V",
-            "B.  C= V/x",
+            "A. C = x/V",
+            "B. C= V/x",
             "C. Ninguna de las anteriores"
         };
 
@@ -49,7 +49,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. Volumen de sustancia",
             "B. Concentración de sustancia",
-            "C. *Sustancia disolvente  "
+            "C. Sustancia disolvente  "
         };
 
         string[] quintoEjercicio =
@@ -58,7 +58,7 @@ namespace MiResidencia20.Views.Ejercicios
             "5. La formula correcta para resolver problemas de distancia," +
                 "rapidez y tiempo es :",
 
-            "A. *distancia =  rapidez x tiempo",
+            "A. distancia =  rapidez x tiempo",
             "B. distancia = rapidez / tiempo",
             "C. distancia² = rapidez  x tiempo"
         };

@@ -19,7 +19,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. Ecuación lineal ",
             "B. Ecuación cuadrática",
-            "C. *Ecuación equivalente"
+            "C. Ecuación equivalente"
         };
 
         string[] segundoEjercicio =
@@ -27,7 +27,7 @@ namespace MiResidencia20.Views.Ejercicios
               //2:R = A. ax + b = 0
             "2. Una ecuación lineal tiene la forma de :",
 
-            "A. *ax + b = 0",
+            "A. ax + b = 0",
             "B. A + B = B + C",
             "C. ax² + bx + c = 0 "
         };
@@ -39,7 +39,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. Ecuación lineal",
             "B. Ecuación cuadrática",
-            "C. *Ecuación de primer grado"
+            "C. Ecuación de primer grado"
         };
 
 
@@ -50,7 +50,7 @@ namespace MiResidencia20.Views.Ejercicios
 
             "A. x² + 2x = 8",
             "B. ax² + bx + c = 0  ",
-            "C. *4x – 5 = 3 "
+            "C. 4x – 5 = 3 "
         };
 
         string[] quintoEjercicio =
@@ -59,7 +59,7 @@ namespace MiResidencia20.Views.Ejercicios
             "5. La solución de la ecuación 5x–5 = 2x-2 es : ",
 
             "A. x = 2",
-            "B. *x = 1",
+            "B. x = 1",
             "C. x = -1"
         };
 
